@@ -1,0 +1,4 @@
+body{
+    background: -webkit-gradient(linear, left top, right top, from(#FF51B0), to(#27d3fe));  /* colores del fondo */
+    background: linear-gradient(to right, #FF51B0, #27d3fe);
+}

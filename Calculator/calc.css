@@ -1,0 +1,41 @@
+body{
+    background: #eee;
+}
+.for_footer{
+    background: rgba(255, 81, 110, 0.507);
+}
+.top{
+    margin-top: -20px;;
+    color: #444;
+}
+#key-1{
+    background: rgba(255, 81, 110, 0.877);
+    border: 1px solid slateblue;
+    min-width: 50px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.answer{
+    padding: 5px;
+    margin: 5px;
+    text-align: right;
+    color: black;
+}
+
+.box{
+    border: 2px solid slateblue;
+    background: blueviolet;
+    min-width: 350px;
+    opacity: 0.9;
+}
+form{
+    font-size: 2em;
+    color: #444;
+}
+em{
+    font-size: 0.8em;
+}
+.size{
+    font-size: 3em;;
+}
