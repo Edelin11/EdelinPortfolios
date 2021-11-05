@@ -51,7 +51,7 @@ const clicksForward = () => {
     }
     else if (botonesFOR == 8 ){
         document.body.style.background = 'linear-gradient(to right, #FF51B0, TOMATO)'; // PINK AND TOMATO
-        buttonColor.style.background = 'linear-gradient(to right, #FF51B0, #27d3fe)';
+        buttonColor.style.background = 'linear-gradient(to right, #FF51B0, TOMATO)';
         botonesFOR = 9;
         colorBG.innerText = "red";
     }
@@ -231,16 +231,3 @@ function deleteANDcheck(y){
 
 
 
-
-
-
-/* 
-
-.calendar__week, .calendar__dates {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 10px; }
-*/
-
-
-//<p id="letras_color">Change backgound color on heart</p> 

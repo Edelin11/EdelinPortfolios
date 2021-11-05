@@ -41,3 +41,16 @@ const triangle =()=>{
     tri9.setAttribute('class', 'tri3-3');
     fig.appendChild(tri9);
 }
+
+
+
+/* 
+
+.calendar__week, .calendar__dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px; }
+*/
+
+
+//<p id="letras_color">Change backgound color on heart</p> 
