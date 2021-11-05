@@ -1,2 +1,2 @@
-# permalink: /main.html
+# permalink: /main
 # EdelinPortfolio
