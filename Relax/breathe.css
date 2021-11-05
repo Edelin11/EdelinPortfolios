@@ -37,6 +37,7 @@ body{
     transition-duration: 0.4s;
 }
 .forCircle:hover {
+    -webkit-background-color: rgba(255, 192, 203, 0.733);
     background-color: rgba(255, 192, 203, 0.733);
     border: 1px solid rgba(255, 192, 203, 0.733);
 }
@@ -70,6 +71,7 @@ h3{
 }
 
 .forTriangle:hover {
+    -webkit-background-color: rgba(255, 192, 203, 0.733);
     background-color: rgba(255, 192, 203, 0.733);
     border: 1px solid rgba(255, 192, 203, 0.733);
 }
@@ -83,11 +85,8 @@ h3{
 /* The figures */
 #container{
     position: absolute;
-    max-width: 500px;
-    max-height: 500px;
     top: 160px;
-    left: 500px;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, 0%);
 }
 .tri1-1, .tri1-2, .tri1-3{
     position: absolute;
@@ -102,18 +101,18 @@ h3{
     left: -24px;
     height: 100px;
     transform: rotate(31deg);
-    animation: move-1 5.1s infinite linear; 
+    animation: move-1 7s infinite linear; 
 }
 .tri1-2{
     left: 24px; 
     transform: rotate(-31deg);
-    animation: move-2 5.1s infinite linear; 
+    animation: move-2 7s infinite linear; 
 }
 .tri1-3{
     top: 43px;
     height: 95px;
     transform: rotate(90deg);
-    animation: move-3 5.1s infinite linear; 
+    animation: move-3 7s infinite linear; 
 }
 
 @keyframes move-1{
@@ -154,18 +153,18 @@ h3{
 .tri2-1{ 
     left: -13px;
     transform: rotate(32deg);
-    animation: exhale-1 5.1s infinite linear;  
+    animation: exhale-1 7s infinite linear;  
 }
 .tri2-2{
     left: 13px; 
     transform: rotate(-32deg);
-    animation: exhale-2 5.1s infinite linear;  
+    animation: exhale-2 7s infinite linear;  
 }
 .tri2-3{
     top: 53px;
     height: 55px;
     transform: rotate(90deg);
-    animation: exhale-3 5.1s infinite linear;
+    animation: exhale-3 7s infinite linear;
 }
 @keyframes exhale-1{ /* left */
     50%{
@@ -209,18 +208,18 @@ h3{
 .tri3-1{ 
     left: -5px;
     transform: rotate(32deg);
-    animation: inhale-1 5.1s infinite linear; 
+    animation: inhale-1 7s infinite linear; 
 }
 .tri3-2{
     left: 5px; 
     transform: rotate(-32deg);
-    animation: inhale-2 5.1s infinite linear; 
+    animation: inhale-2 7s infinite linear; 
 }
 .tri3-3{
     top: 66px;
     height: 20px;
     transform: rotate(90deg);
-    animation: inhale-3 5.1s infinite linear
+    animation: inhale-3 7s infinite linear
 }
 @keyframes inhale-1{
     50%{
@@ -255,12 +254,9 @@ h3{
 /* Here starts the circle  */
 
 #container2{
-    max-width: 600px;
-    max-height: 600px;
     position: absolute;
     top: 250px;
-    left: 460px;
-    transform: translate(0%, 0%);
+    transform: translate(-200%, 0%);
 }
 
 .circle1{
