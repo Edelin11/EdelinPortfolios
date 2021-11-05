@@ -4,6 +4,7 @@ body{
 }
 .for_footer{
     background: rgba(255, 81, 110, 0.507);
+    margin-top: 100px;
 }
 .size{
     font-size: 3em;;
@@ -37,9 +38,9 @@ body{
     transition-duration: 0.4s;
 }
 .forCircle:hover {
-    -webkit-background-color: rgba(255, 192, 203, 0.733);
-    background-color: rgba(255, 192, 203, 0.733);
-    border: 1px solid rgba(255, 192, 203, 0.733);
+    -webkit-background-color: rgb(209, 207, 207);;
+    background-color: rgb(209, 207, 207);
+    border: 1px solid rgb(209, 207, 207);
 }
 
 .forCircle:active {
@@ -71,9 +72,9 @@ h3{
 }
 
 .forTriangle:hover {
-    -webkit-background-color: rgba(255, 192, 203, 0.733);
-    background-color: rgba(255, 192, 203, 0.733);
-    border: 1px solid rgba(255, 192, 203, 0.733);
+    -webkit-background-color: rgb(209, 207, 207);
+    background-color: rgb(209, 207, 207);
+    border: 1px solid rgb(209, 207, 207);
 }
 
 .forTriangle:active {
@@ -84,9 +85,10 @@ h3{
 
 /* The figures */
 #container{
-    position: absolute;
-    top: 160px;
-    transform: translate(-50%, 0%);
+    position: relative;
+    top: 180px;
+    left: 90px;
+    transform: translate(-300%, 0%);
 }
 .tri1-1, .tri1-2, .tri1-3{
     position: absolute;
