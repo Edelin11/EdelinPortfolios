@@ -87,7 +87,7 @@ h3{
 #container{
     position: relative;
     top: 180px;
-    left: 90px;
+    left: 80px;
     transform: translate(-300%, 0%);
 }
 .tri1-1, .tri1-2, .tri1-3{
@@ -258,7 +258,7 @@ h3{
 #container2{
     position: absolute;
     top: 250px;
-    transform: translate(-200%, 0%);
+    transform: translate(-205%, 0%);
 }
 
 .circle1{
