@@ -9,9 +9,7 @@ body {
     background-color: #000000a8;
     transform: translate(5%, 0%);   
 }
-.all-position{
-    transform: translate(5%, 0%);
-}
+
 .group{
     font-size: 1.5em;
     color: white;
