@@ -8,7 +8,7 @@ ________________________________________________________________________________
 __This is a quick description of the projects.__
 
 ### Horoscope:
-This is a simple page that asks you for an input and returns a value, your zodiac sign and more.
+This is a simple page that asks you for an input and returns your zodiac sign and more.
 
 ### Calculator: 
 This is a simple web calculator with purple-pink colors.
