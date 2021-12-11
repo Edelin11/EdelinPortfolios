@@ -5,7 +5,7 @@ I created this portfolio with personal projects that I have developed for my per
 
 _______________________________________________________________________________________________________________________________________________________________
 
-__This is a quick description of the projects.
+__This is a quick description of the projects.__
 
 ### Horoscope:
 This is a simple page that asks you for an input and returns a value, your zodiac sign and more.
