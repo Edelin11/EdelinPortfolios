@@ -1,4 +1,4 @@
-# permalink: index.html
+##### permalink: index.html
 # Hi! I'm Edelin and this is my portfolio.
 
 I created this portfolio with personal projects that I have developed for my personal enjoyment. These projects represent me because they each have a little bit of my personality and about how I like to spend some my time.
