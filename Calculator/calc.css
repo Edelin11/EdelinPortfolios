@@ -1,16 +1,27 @@
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
 body{
-    background: #eee;
+    background: white;
 }
 .for_footer{
     background: rgba(255, 81, 110, 0.507);
+}
+#contact{
+    position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .top{
     margin-top: -20px;;
     color: #444;
 }
 #key-1{
-    background: rgba(255, 81, 110, 0.877);
-    border: 1px solid slateblue;
+    background: rgba(255, 81, 110, 0.493);
+    border: 1px solid rgba(105, 90, 205, 0.438);
     min-width: 50px;
     margin-bottom: 5px;
     color: black;
@@ -24,8 +35,8 @@ body{
 }
 
 .box{
-    border: 2px solid slateblue;
-    background: blueviolet;
+    border: 2px solid rgba(105, 90, 205, 0.445);
+    background: rgba(137, 43, 226, 0.356);
     min-width: 350px;
     opacity: 0.9;
 }
