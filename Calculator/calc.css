@@ -24,7 +24,8 @@ body{
 }
 #key-1{
     background: rgba(255, 81, 110, 0.493);
-    border: 1px solid rgba(105, 90, 205, 0.438);
+    border: 1px solid rgba(105, 90, 205, 0.438); 
+    border-radius: 10px;
     min-width: 50px;
     margin-bottom: 5px;
     color: black;
@@ -39,6 +40,7 @@ body{
 
 .box{
     border: 2px solid rgba(105, 90, 205, 0.445);
+    border-radius: 15px;
     background: rgba(137, 43, 226, 0.356);
     min-width: 350px;
     opacity: 0.9;
