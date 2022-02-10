@@ -1,6 +1,10 @@
-body{
-    background: rgba(238, 238, 238, 0.788);
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+    background: white;
 }
+
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
