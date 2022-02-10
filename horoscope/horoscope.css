@@ -4,7 +4,36 @@ body, html {
     line-height: 1.8;
     background: white;
 }
-
+.for_footer{
+    background: rgba(255, 81, 110, 0.507);
+    
+}
+.title{
+    color: rgb(104, 103, 103);
+    font-size: 2rem;
+}
+.title2{
+    color: rgb(104, 103, 103);
+    font-size: 1.3rem;
+    padding: 5px;
+}
+#btn-coll{
+    box-shadow: 2px 2px 5px 1px rgb(224, 85, 85);
+}
+#zodiac-btn, #zodiac-btn2, .content{
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgb(175, 175, 175);
+}
+#zodiac-btn:hover, #zodiac-btn2:hover{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+#zodiac-btn:active, #zodiac-btn2:active{
+    background-color: #eee;
+    box-shadow: 0 5px rgba(255, 81, 110, 0.507);
+    transform: translateY(3px);
+}
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -62,25 +91,4 @@ body, html {
 }
 #here{
     font-size: 3vmin;
-}
-.for_footer{
-    background: rgba(255, 81, 110, 0.507);
-}
-.size{
-    font-size: 3em;;
-}
-.top{
-    margin-top: 40px;;
-    color: #444;
-}
-#btn-coll{
-    box-shadow: 2px 2px 5px 1px rgb(175, 175, 175);
-}
-#zodiac-btn, #zodiac-btn2, .content{
-    border: 1px solid #eee;
-    box-shadow: 2px 2px 5px 1px rgb(175, 175, 175);
-}
-#zodiac-btn:hover, #zodiac-btn2:hover{
-    background-color: #ccc;
-    border: 1px solid #ccc;
 }
