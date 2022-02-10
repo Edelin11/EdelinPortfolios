@@ -1,28 +1,23 @@
-
-body{
-    background: rgba(238, 238, 238, 0.349);
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+    background: white;
 }
 .for_footer{
     background: rgba(255, 81, 110, 0.507);
-    margin-top: 100px;
-}
-.size{
-    font-size: 3em;;
-}
-#contact{
-    position: relative;
-    bottom: -200px;
 }
 .top{
-    position: relative;
-    top: 0px;
-    margin-bottom: 200px;
-    background-color: rgba(0, 0, 0, 0.658);   
+    padding-bottom: 150px;
 }
-.group{
-    display: flex;
-    place-content: center;
+
+.title{
+    margin-top: 50px;
+    font-size: 1.5em;
+    color: #777;
+    padding: 10px;
 }
+
 
 /* The buttons of the figures */
 .forCircle{
@@ -45,17 +40,11 @@ body{
 
 .forCircle:active {
   background-color: white;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 5px rgb(102, 102, 102);
   transform: translateY(4px);
 }
-h3{
-    position: relative;
-    top: 10px;
-    padding-left: 30px;
-    padding-right: 30px; 
-}
+
 .forTriangle{
-   
     border-radius: 6px;
     border: 1px solid white;
     background: white;
@@ -79,16 +68,14 @@ h3{
 
 .forTriangle:active {
   background-color: white;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 5px rgb(102, 102, 102);
   transform: translateY(4px);
 }
 
 /* The figures */
 #container{
-    position: relative;
-    top: 180px;
-    left: 80px;
-    transform: translate(-300%, 0%);
+    /* container for triangle */
+    transform: translate(-0%, 0%); 
 }
 .tri1-1, .tri1-2, .tri1-3{
     position: absolute;
@@ -256,9 +243,7 @@ h3{
 /* Here starts the circle  */
 
 #container2{
-    position: absolute;
-    top: 250px;
-    transform: translate(-205%, 0%);
+    transform: translate(0%, 0%);
 }
 
 .circle1{
