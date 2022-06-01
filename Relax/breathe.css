@@ -5,11 +5,11 @@ body, html {
     background: #31458c;
 }
 .for_footer{
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: -50px;
+    margin-top: 100px;
     background: rgba(255, 81, 110, 0.507);
-    margin-top: 150px;
 }
 .powerby-size{
     font-size: 12px;
@@ -31,7 +31,7 @@ body, html {
     align-items: center;
     text-align: center;
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     margin-left: 40px;
 }
 
@@ -44,6 +44,7 @@ body, html {
 .heart{
     transform: scale(2, 2);;
     color: red;
+    margin-left: 0px;
     animation: heart 7s infinite linear; 
     text-shadow: 0px 1px 10px gainsboro, 0 -2px 8px #d19;
 }

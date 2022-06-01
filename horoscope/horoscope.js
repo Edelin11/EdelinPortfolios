@@ -8,9 +8,6 @@ var day = document.getElementById("day"); // get day
 var Byear = document.getElementById("year"); // button for western zodiac, ****** might not need this one
 var result = document.getElementById("here"); // print result for zodiac sign here. 
 var moreAbout = document.getElementById("about");
-var aboutAnimal = document.getElementById("aboutA");
-var coll = document.getElementsByClassName("collapsible")
-var coll2 = document.getElementsByClassName("collaps2"); // the drop down collapsible that says more about the signs
 var more = document.getElementById("aboutSign");
 var cSign = document.getElementById("cSign");
 
@@ -37,20 +34,9 @@ const forChineseYear =()=>{
     var mySign = (fromyear - getyear.value)%12;
 
     if(mySign == 12 || (mySign == 0)){  
-        animal.innerHTML = `<p>${'<em>Chinese Sign<hr></em>'}The PIG...</p>`;
-        var i;
-        for (i = 0; i < coll2.length; i++) {
-            coll2[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var contents  = this.nextElementSibling;
-                if (contents.style.display === "block") {
-                    contents.style.display = "none";
-                }else {
-                    contents.style.display = "block";
-                }
-            });
-        } 
-        cSign.innerHTML = `<p>Characteristics of the Pig${'<hr>'}
+        cSign.innerHTML = `
+        <h4>Your Chinese Zodiac Sign Is The PIG</h4>
+        <p>Characteristics of the Pig${'<br>'}
         "Pigs might not stand out in a crowd.
         But they are very realistic. Others may be all talk and no action. Pigs are the opposite.
         Though not wasteful spenders, they will let themselves enjoy life.
@@ -61,20 +47,9 @@ const forChineseYear =()=>{
         Read More From Source At ${'<a href="https://chinesenewyear.net/zodiac/pig/">chinesenewyear.net</a>'} ${'<br>'}Chinese New Year, February 1st, 2022</p>`;                         
     }
     else if(mySign == 11 || (mySign == -1)){
-        animal.innerHTML = `<p>${'<em>Chinese Sign<hr></em>'} The RAT...</p>`;
-        var i;
-        for (i = 0; i < coll2.length; i++) {
-            coll2[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var contents  = this.nextElementSibling;
-                if (contents.style.display === "block") {
-                    contents.style.display = "none";
-                }else {
-                    contents.style.display = "block";
-                }
-            });
-        } 
-        cSign.innerHTML = `<p>Characteristics of the RAT${'<hr>'}
+        cSign.innerHTML = `
+        <hb>Your Chinese Zodiac Sign Is The RAT</hb>
+        <p>Characteristics of the RAT${'<br>'}
         "Optimistic and energetic, people born in the Rat year are 
         likable by all. They are sensitive to other’s emotions 
         but are stubborn with your opinion. Their personality is
@@ -83,21 +58,10 @@ const forChineseYear =()=>{
         Read More From Source At ${'<a href="https://chinesenewyear.net/zodiac/rat/">chinesenewyear.net</a>'}
         ${'<br>'}Chinese New Year, February 1st, 2022 </p>`; 
     }
-    else if(mySign == 10 || (mySign == -2)){
-        animal.innerHTML = `<p>${'<em>Chinese Sign<hr></em>'} The OX...</p>`;
-        var i;
-        for (i = 0; i < coll2.length; i++) {
-            coll2[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var contents  = this.nextElementSibling;
-                if (contents.style.display === "block") {
-                    contents.style.display = "none";
-                }else {
-                    contents.style.display = "block";
-                }
-            });
-        } 
-        cSign.innerHTML = `<p>Characteristics of the OX${'<hr>'}
+    else if(mySign == 10 || (mySign == -2)){ 
+        cSign.innerHTML = `
+        <h4>Your Chinese Zodiac Sign Is The OX</h4>
+        <p>Characteristics of the OX${'<br>'}
         "Oxen are honest and earnest.
         They are low key and never look for praise or to be 
         the center of attention. This often hides their talent, 
@@ -110,20 +74,9 @@ const forChineseYear =()=>{
         ${'<br>'}Chinese New Year, February 1st, 2022 </p>`;
     }
     else if(mySign == 9 || (mySign == -3)){
-        animal.innerHTML = `<p>${'<em>Chinese Sign<hr></em>'} The TIGER...</p>`;
-        var i;
-        for (i = 0; i < coll2.length; i++) {
-            coll2[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var contents  = this.nextElementSibling;
-                if (contents.style.display === "block") {
-                    contents.style.display = "none";
-                }else {
-                    contents.style.display = "block";
-                }
-            });
-        } 
-        cSign.innerHTML = `<p>Characteristics of the Tiger${'<hr>'}
+        cSign.innerHTML = `
+        <h4>Your Chinese Zodiac Sign Is The TIGER</h4>
+        <p>Characteristics of the Tiger${'<br>'}
         "Tigers are kind and benevolent. Animals, jazz music or
         other things that call for imagination are good for them.
         They rarely feel tired and have rich emotions.
@@ -135,22 +88,11 @@ const forChineseYear =()=>{
         ${'<br>'}Chinese New Year, February 1st, 2022 </p>`;
     }
     else if(mySign == 8 || (mySign == -4)){
-        animal.innerHTML = `<p>${'<em>Chinese Sign<hr></em>'} The RABBIT...</p>`;
-        var i;
-        for (i = 0; i < coll2.length; i++) {
-            coll2[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var contents  = this.nextElementSibling;
-                if (contents.style.display === "block") {
-                    contents.style.display = "none";
-                }else {
-                    contents.style.display = "block";
-                }
-            });
-        } 
-        cSign.innerHTML = `<p>Characteristics of the Rabbit${'<hr>'}
-        "To outsiders, the Rabbit’s kindness may make them seem soft 
-        and weak. In truth, the Rabbit’s quiet personality hides 
+        cSign.innerHTML = `
+        <h4>Your Chinese Zodiac Sign Is The RABBIT</h4>
+        <p>Characteristics of the Rabbit${'<br>'}
+        "To outsiders, the Rabbit kindness may make them seem soft 
+        and weak. In truth, the Rabbit quiet personality hides 
         their confidence and strength. They are steadily moving towards 
         their goal, no matter what negativity the others give them.
         With their good reasoning skills and attention to detail, 
@@ -161,41 +103,19 @@ const forChineseYear =()=>{
         ${'<br>'}Chinese New Year, February 1st, 2022 </p>`;
     }
     else if(mySign == 7 || (mySign == -5)){
-        animal.innerHTML = `<p>${'<em>Chinese Sign<hr></em>'} The DRAGON...</p>`;
-        var i;
-        for (i = 0; i < coll2.length; i++) {
-            coll2[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var contents  = this.nextElementSibling;
-                if (contents.style.display === "block") {
-                    contents.style.display = "none";
-                }else {
-                    contents.style.display = "block";
-                }
-            });
-        } 
-        cSign.innerHTML = `<p>Characteristics of the Dragon${'<hr>'}
+        cSign.innerHTML = `
+        <h4>Your Chinese Zodiac Sign Is The DRAGON</h4>
+        <p>Characteristics of the Dragon: ${'<br>'}
         "Dragons are the most revered animal in Chinese culture. 
         They call themselves the descendants of the dragon. 
         In the past, emperors were seen as the reincarnation of dragons."${'<br>'}
         ${'<br>'}Read More From Source At ${'<a href="https://chinesenewyear.net/zodiac/dragon/">chinesenewyear.net</a>'}
         ${'<br>'}Chinese New Year, February 1st, 2022 </p>`;
     }
-    else if(mySign == 6 || (mySign == -6)){
-        animal.innerHTML = `<p>${'<em>Chinese Sign<hr></em>'} The SNAKE...</p>`;
-        var i;
-        for (i = 0; i < coll2.length; i++) {
-            coll2[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var contents  = this.nextElementSibling;
-                if (contents.style.display === "block") {
-                    contents.style.display = "none";
-                }else {
-                    contents.style.display = "block";
-                }
-            });
-        } 
-        cSign.innerHTML = `<p>Characteristics of the Snake${'<hr>'}
+    else if(mySign == 6 || (mySign == -6)){ 
+        cSign.innerHTML = `
+        <h4>Your Chinese Zodiac Sign Is ${'<br>'} The SNAKE </h4>${'<hr>'}
+        <p>Characteristics of the Snake: ${'<br>'}
         "Snakes are humorous and sophisticated. They don’t like small 
         talk or thinking about small everyday problems.In a chaotic environment, 
         they are the eye of the storm. Snakes are able to hold their 
@@ -207,21 +127,10 @@ const forChineseYear =()=>{
         and observant."${'<br>'}${'<br>'}Read More From Source At ${'<a href="https://chinesenewyear.net/zodiac/snake/">chinesenewyear.net</a>'}
         ${'<br>'}Chinese New Year, February 1st, 2022 </p>`;
     }
-    else if(mySign == 5 || (mySign == -7)){
-        animal.innerHTML = `<p>${'<em>Chinese Sign<hr></em>'} The HORSE...</p>`;
-        var i;
-        for (i = 0; i < coll2.length; i++) {
-            coll2[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var contents  = this.nextElementSibling;
-                if (contents.style.display === "block") {
-                    contents.style.display = "none";
-                }else {
-                    contents.style.display = "block";
-                }
-            });
-        } 
-        cSign.innerHTML = `<p>Characteristics of the Horse${'<hr>'}
+    else if(mySign == 5 || (mySign == -7)){ 
+        cSign.innerHTML = `
+        <h4>Your Chinese Zodiac Sign Is The HORSE</h4>
+        <p>Characteristics of the Horse${'<br>'}
         "Horses are full of energy, albeit a bit too much. 
         Both studious and athletic, they are strong believers of 
         chasing after dreams. Rather than wealth and fame, happiness 
@@ -235,20 +144,9 @@ const forChineseYear =()=>{
         ${'<br>'}Chinese New Year, February 1st, 2022 </p>`;
     }
     else if(mySign == 4 || (mySign == -8)){
-        animal.innerHTML = `<p>${'<em>Chinese Sign<hr></em>'} The GOAT...</p>`;
-        var i;
-        for (i = 0; i < coll2.length; i++) {
-            coll2[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var contents  = this.nextElementSibling;
-                if (contents.style.display === "block") {
-                    contents.style.display = "none";
-                }else {
-                    contents.style.display = "block";
-                }
-            });
-        } 
-        cSign.innerHTML = `<p>Characteristics of the Goat${'<hr>'}
+        cSign.innerHTML = `
+        <h4>Your Chinese Zodiac Sign Is The GOAT</h4>
+        <p>Characteristics of the Goat${'<br>'}
         "Goats are able to persevere through any difficulty. 
         This is their most notable trait. They are strong and resilient, 
         though their gentleness might be misleading.
@@ -263,20 +161,9 @@ const forChineseYear =()=>{
         ${'<br>'}Chinese New Year, February 1st, 2022 </p>`;
     }
     else if(mySign == 3 || (mySign == -9)){
-        animal.innerHTML = `<p>${'<em>Chinese Sign<hr></em>'} The MONKEY...</p>`;
-        var i;
-        for (i = 0; i < coll2.length; i++) {
-            coll2[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var contents  = this.nextElementSibling;
-                if (contents.style.display === "block") {
-                    contents.style.display = "none";
-                }else {
-                    contents.style.display = "block";
-                }
-            });
-        } 
-        cSign.innerHTML = `<p>Characteristics of the Monkey${'<hr>'}
+        cSign.innerHTML = `
+        <h4>Your Chinese Zodiac Sign Is The MONKEY</h4>
+        <p>Characteristics of the Monkey${'<br>'}
         "Monkeys’ most defining trait is their intelligence. 
         As children, they win awards and the praises of teachers. 
         As adults, they gain professional recognition and make great leaders.
@@ -291,20 +178,9 @@ const forChineseYear =()=>{
         ${'<br>'}Chinese New Year, February 1st, 2022 </p>`;
     }
     else if(mySign == 2 || (mySign == -10)){
-        animal.innerHTML = `<p>${'<em>Chinese Sign<hr></em>'} The ROOSTER...</p>`;
-        var i;
-        for (i = 0; i < coll2.length; i++) {
-            coll2[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var contents  = this.nextElementSibling;
-                if (contents.style.display === "block") {
-                    contents.style.display = "none";
-                }else {
-                    contents.style.display = "block";
-                }
-            });
-        } 
-        cSign.innerHTML = `<p>Characteristics of the Rooster${'<hr>'}
+        cSign.innerHTML = `
+        <h4>Your Chinese Zodiac Sign Is The ROOSTER</h4>
+        <p>Characteristics of the Rooster${'<br>'}
         "Roosters are serious in their work. They are straightforward and 
         decisive in their actions. They’ll directly criticize what they see 
         unfit and are perfectionists. They are logical and good at managing teams.
@@ -316,20 +192,9 @@ const forChineseYear =()=>{
         ${'<br>'}Chinese New Year, February 1st, 2022 </p>`;
     }
     else if(mySign == 1 || (mySign == -11)){
-        animal.innerHTML = `<p>${'<em>Chinese Sign<hr></em>'} The DOG...</p>`;
-        var i;
-        for (i = 0; i < coll2.length; i++) {
-            coll2[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var contents  = this.nextElementSibling;
-                if (contents.style.display === "block") {
-                    contents.style.display = "none";
-                }else {
-                    contents.style.display = "block";
-                }
-            });
-        } 
-        cSign.innerHTML = `<p>Characteristics of the Dog${'<hr>'}
+        cSign.innerHTML = `
+        <h4>Your Chinese Zodiac Sign Is The DOG</h4>
+        <p>Characteristics of the Dog${'<br>'}
         "A Dog’s most defining characteristic is their loyalty. 
         They will never abandon their friends, family or work.
         Honest and just, they are popular in social circles. 
@@ -347,7 +212,7 @@ const forChineseYear =()=>{
     * or if month is same as month2 and day is less or equal than the last day of zodic  
 */
 
-/*  * the horoscope dates */
+// the horoscope dates 
 var aries = [03, 21, 04, 19];
 var taurus = [04, 20, 05, 20];
 var gemini = [05, 21, 06, 20]; 
@@ -367,24 +232,10 @@ const forAries =()=>{
     var getMonth = [month.value];
     var getDay = [day.value]; 
     if(getDay <= 31 && getMonth == aries[0] && getDay >= aries[1] || getMonth[0] == aries[2] &&  getDay <= aries[3] ){
-        result.innerHTML = `<p>${'<em>Zodiac Sign<hr></em>'}Aries ${'<br>'} March 21 - April 19</p>`;
-        /* READ MORE PART */
-        var i;
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                content.style.display = "none";
-                } else {
-                content.style.display = "block";
-                }
-            });
-        }
-    more.innerHTML = `<p>Aries is a fire sign. Aries people are outgoing, friendly and popular.${'<br>'}
-    ${'<br>'}${'<br>'}Read More At
-    ${'<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/aries/">www.astrology-zodiac-signs.com</a>'}
-    </p>`;
+        result.innerHTML = `<p style="font-size: 20px;">Aries ${'<br>'} March 21 - April 19</p>`;
+        more.innerHTML = `
+        <p>Aries is a fire sign. Aries people are outgoing, friendly and popular.${'<br>'}
+        </p>`;
     } 
    
 } 
@@ -392,24 +243,11 @@ const forTaurus =()=>{
     var getMonth = [month.value];
     var getDay = [day.value];
     if(getDay <= 30 && getMonth == taurus[0] && getDay >= taurus[1] || getMonth[0] == taurus[2] && getDay <= taurus[3] ){
-        result.innerHTML = `<p>${'<em>Zodiac Sign<hr></em>'}Taurus ${'<br>'} April 20 - May 20</p>`;
-        /* READ MORE PART */
-        var i;
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                content.style.display = "none";
-                } else {
-                content.style.display = "block";
-                }
-            });
-        }
-    more.innerHTML = `<p>Taurus is an earth sign. Taurus people are very ambitious and sucessfull. 
-    ${'<br>'}${'<br>'}Read More At
-    ${'<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/taurus/">www.astrology-zodiac-signs.com</a>'}
-    </p>`; 
+        result.innerHTML = `<p style="font-size: 20px;">Taurus ${'<br>'} April 20 - May 20</p>`;
+        more.innerHTML = `
+        <p>Taurus is an earth sign. Taurus people are very ambitious and sucessfull. 
+            ${'<br>'}
+        </p>`; 
     }
     
 } 
@@ -417,24 +255,10 @@ const forGemini =()=>{
     var getMonth = [month.value];
     var getDay = [day.value];
     if(getDay <= 31 && getMonth == gemini[0] && getDay >= gemini[1] || getMonth[0] == gemini[2] && getDay <= gemini[3]){
-        result.innerHTML = `<p>${'<em>Zodiac Sign<hr></em>'}Gemini ${'<br>'} May 21 - June 20</p>`;
-        /* READ MORE PART */
-        var i;
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                content.style.display = "none";
-                } else {
-                content.style.display = "block";
-                }
-            });
-        }
-    more.innerHTML = `<p>Gemini is an air sign. They have two personalities and are quick-witted.
-    ${'<br>'}${'<br>'}Read More At
-    ${'<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/gemini/">www.astrology-zodiac-signs.com</a>'}
-    </p>`; 
+        result.innerHTML = `<p style="font-size: 20px;">Gemini ${'<br>'} May 21 - June 20</p>`;
+        more.innerHTML = `<p>Gemini is an air sign. They have two personalities and are quick-witted.
+        ${'<br>'}
+        </p>`; 
     }
     
 } 
@@ -442,24 +266,10 @@ const forCancer =()=>{
     var getMonth = [month.value];
     var getDay = [day.value];
     if(getDay <= 30 && getMonth == cancer[0] && getDay >= cancer[1] || getMonth[0] == cancer[2] && getDay <= cancer[3] ){
-        result.innerHTML = `<p>${'<em>Zodiac Sign<hr></em>'}Cancer ${'<br>'} Jun 21 - Jul 22</p>`;
-      /* READ MORE PART */
-        var i;
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-          });
-    }
-    more.innerHTML = `<p>Cancer is a water sign. They are also known as Moonchild. Deeply sensitive and emotional.
-    ${'<br>'}${'<br>'}Read More At
-    ${'<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/cancer/">www.astrology-zodiac-signs.com</a>'}
-    </p>`;  
+        result.innerHTML = `<p style="font-size: 20px;">Cancer ${'<br>'} Jun 21 - Jul 22</p>`;
+        more.innerHTML = `<p>Cancer is a water sign. They are also known as Moonchild. Deeply sensitive and emotional.
+        ${'<br>'}
+        </p>`;  
     }
     
 } 
@@ -467,24 +277,10 @@ const forLeo =()=>{
     var getMonth = [month.value];
     var getDay = [day.value];
     if(getDay <= 31 && getMonth == leo[0] && getDay >= leo[1] || getMonth[0] == leo[2] && getDay <= leo[3] ){
-        result.innerHTML = `<p>${'<em>Zodiac Sign<hr></em>'}Leo ${'<br>'} Jul 23 - Aug 22</p>`;
-       /* READ MORE PART */
-       var i;
-       for (i = 0; i < coll.length; i++) {
-           coll[i].addEventListener("click", function() {
-               this.classList.toggle("active");
-               var content = this.nextElementSibling;
-               if (content.style.display === "block") {
-               content.style.display = "none";
-               } else {
-               content.style.display = "block";
-               }
-           });
-       }
-   more.innerHTML = `<p>Leo is a fire sign. They love being the center of attention. They're dramatic and dominant but also generous and loyal.
-   ${'<br>'}${'<br>'}Read More At
-    ${'<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/leo/">www.astrology-zodiac-signs.com</a>'}
-   </p>`;  
+        result.innerHTML = `<p style="font-size: 20px;">Leo ${'<br>'} Jul 23 - Aug 22</p>`;
+        more.innerHTML = `<p>Leo is a fire sign. They love being the center of attention. They're dramatic and dominant but also generous and loyal.
+        ${'<br>'}
+        </p>`;  
     }
    
 } 
@@ -492,24 +288,10 @@ const forVirgo =()=>{
     var getMonth = [month.value];
     var getDay = [day.value];
     if(getDay <= 31 && getMonth == virgo[0] && getDay >= virgo[1] || getMonth[0] == virgo[2] && getDay <= 31 && getDay <= virgo[3] ){
-        result.innerHTML = `<p>${'<em>Zodiac Sign<hr></em>'}Virgo ${'<br>'} Aug 23 - Sept 22</p>`;
-        /* READ MORE PART */
-        var i;
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                content.style.display = "none";
-                } else {
-                content.style.display = "block";
-                }
-            });
-        }
-    more.innerHTML = `<p>Virgo is an earth sign. Virgos are perfectionists, great friends, kind and motherly.
-    ${'<br>'}${'<br>'}Read More At
-    ${'<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/virgo/">www.astrology-zodiac-signs.com</a>'}
-    </p>`;  
+        result.innerHTML = `<p style="font-size: 20px;">Virgo ${'<br>'} Aug 23 - Sept 22</p>`;
+        more.innerHTML = `<p>Virgo is an earth sign. Virgos are perfectionists, great friends, kind and motherly.
+        ${'<br>'}
+        </p>`;  
     }
     
 } 
@@ -517,24 +299,10 @@ const forLibra =()=>{
     var getMonth = [month.value];
     var getDay = [day.value];
     if(getDay <= 30 && getMonth == libra[0] && getDay >= libra[1] || getMonth[0] == libra[2] && getDay <= libra[3] ){
-        result.innerHTML = `<p>${'<em>Zodiac Sign<hr></em>'}Libra ${'<br>'} Sept 23 - Oct 22</p>`;
-        /* READ MORE PART */
-        var i;
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                content.style.display = "none";
-                } else {
-                content.style.display = "block";
-                }
-            });
-        }
-    more.innerHTML = `<p>Libra is an air sign. They are the balance of the zodiac. They are peaceful and kind.
-    ${'<br>'}${'<br>'}Read More At
-    ${'<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/libra/">www.astrology-zodiac-signs.com</a>'}
-    </p>`;    
+        result.innerHTML = `<p style="font-size: 20px;">Libra ${'<br>'} Sept 23 - Oct 22</p>`;
+        more.innerHTML = `<p>Libra is an air sign. They are the balance of the zodiac. They are peaceful and kind.
+        ${'<br>'}
+        </p>`;    
     }
  
 } 
@@ -542,25 +310,10 @@ const forScorpio =()=>{
     var getMonth = [month.value];
     var getDay = [day.value];
     if(getDay <= 31 && getMonth ==scorpio[0] && getDay >= scorpio[1] || getMonth[0] == scorpio[2] && getDay <= scorpio[3] ){
-        console.log("scorpio");
-        result.innerHTML = `<p>${'<em>Zodiac Sign<hr></em>'}Scorpio${'<br>'} Oct 23 - Nov 21</p>`;
-        /* READ MORE PART */
-        var i;
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                content.style.display = "none";
-                } else {
-                content.style.display = "block";
-                }
-            });
-        }
-    more.innerHTML = `<p>Scorpio is a water sign. They are loyal, misterious, kind and strong minded.
-    ${'<br>'}${'<br>'}Read More At
-    ${'<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/scorpio/">www.astrology-zodiac-signs.com</a>'}
-    </p>`;                          
+        result.innerHTML = `<p style="font-size: 20px;">Scorpio${'<br>'} Oct 23 - Nov 21</p>`;
+        more.innerHTML = `<p>Scorpio is a water sign. They are loyal, misterious, kind and strong minded.
+        ${'<br>'}
+        </p>`;                          
     } 
 } 
 
@@ -568,25 +321,10 @@ const forSagittarius =()=>{
     var getMonth = [month.value];
     var getDay = [day.value];
     if(getDay <= 30 && getMonth == sagittarius[0] && getDay >= sagittarius[1] || getMonth[0] == sagittarius[2] && getDay <= sagittarius[3] ){
-        result.innerHTML = `<p>${'<em>Zodiac Sign<hr></em>'}Sagittarius${'<br>'} Nov 22 - Dec 21</p>`; 
-        /* READ MORE PART */
-        var i;
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                content.style.display = "none";
-                } else {
-                content.style.display = "block";
-                }
-            });
-        }
-    more.innerHTML = `<p>Sgittarius is a fire sign. They are the soul of the party. They are friendly, kind and optimistics.
-    ${'<br>'}${'<br>'}Read More At
-    ${'<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/sagittarius/">www.astrology-zodiac-signs.com</a>'}
-    </p>`;  
-    
+        result.innerHTML = `<p style="font-size: 20px;">Sagittarius${'<br>'} Nov 22 - Dec 21</p>`; 
+        more.innerHTML = `<p>Sgittarius is a fire sign. They are the soul of the party. They are friendly, kind and optimistics.
+        ${'<br>'}
+        </p>`;  
     }
   
 } 
@@ -594,49 +332,20 @@ const forCapricorn =()=>{
     var getMonth = [month.value];
     var getDay = [day.value];
     if(getDay <= 31 && getMonth == capricorn[0] && getDay >= capricorn[1] || getMonth[0] == capricorn[2] && getDay <= capricorn[3] ){
-        result.innerHTML = `<p>${'<em>Zodiac Sign<hr></em>'}Capricorn${'<br>'} Dec 22 - Jan 19</p>`; 
-       /* READ MORE PART */
-       var i;
-       for (i = 0; i < coll.length; i++) {
-           coll[i].addEventListener("click", function() {
-               this.classList.toggle("active");
-               var content = this.nextElementSibling;
-               if (content.style.display === "block") {
-               content.style.display = "none";
-               } else {
-               content.style.display = "block";
-               }
-           });
-       }
-   more.innerHTML = `<p>Capricorn is an earth sign. They are responsible, highly discipline and generous.
-   ${'<br>'}${'<br>'}Read More At
-    ${'<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/capricorn/">www.astrology-zodiac-signs.com</a>'}
-   </p>`;  
-    }
-    
+        result.innerHTML = `<p style="font-size: 20px;">Capricorn${'<br>'} Dec 22 - Jan 19</p>`; 
+        more.innerHTML = `<p>Capricorn is an earth sign. They are responsible, highly discipline and generous.
+        ${'<br>'}
+        </p>`;  
+    } 
 } 
 const forAquarius =()=>{
     var getMonth = [month.value];
     var getDay = [day.value];
     if(getDay <= 31 && getMonth == aquarius[0] && getDay >= aquarius[1] || getMonth[0] == aquarius[2] && getDay <= aquarius[3] ){
-        result.innerHTML = `<p>${'<em>Zodiac Sign<hr></em>'}Aquarius${'<br>'} Jan 20 - Feb 18</p>`; 
-       /* READ MORE PART */
-       var i;
-       for (i = 0; i < coll.length; i++) {
-           coll[i].addEventListener("click", function() {
-               this.classList.toggle("active");
-               var content = this.nextElementSibling;
-               if (content.style.display === "block") {
-               content.style.display = "none";
-               } else {
-               content.style.display = "block";
-               }
-           });
-       }
-   more.innerHTML = `<p>Aquarius is an air sign. They are different, eccentric, friendly and kind.
-   ${'<br>'}${'<br>'}Read More At
-    ${'<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/aquarius/">www.astrology-zodiac-signs.com</a>'}
-   </p>`;     
+        result.innerHTML = `<p style="font-size: 20px;">Aquarius${'<br>'} Jan 20 - Feb 18</p>`; 
+        more.innerHTML = `<p>Aquarius is an air sign. They are different, eccentric, friendly and kind.
+        ${'<br>'}
+        </p>`;     
     }
    
 } 
@@ -644,24 +353,10 @@ const forPisces =()=>{
     var getMonth = [month.value];
     var getDay = [day.value];
     if(getDay <= 29 && getMonth == pisces[0] && getDay >= pisces[1] || getMonth[0] == pisces[2] && getDay <= pisces[3] ){
-        result.innerHTML = `<p>${'<em>Zodiac Sign<hr></em>'}Pisces${'<br>'} Feb 19 - Mar 20</p>`; 
-        /* READ MORE PART */
-        var i;
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                content.style.display = "none";
-                } else {
-                content.style.display = "block";
-                }
-            });
-        }
-    more.innerHTML = `<p>Pisces is a water sign. They are highly sensitive, emotional and intelligent.
-    ${'<br>'}${'<br>'}Read More At
-    ${'<a href="https://www.astrology-zodiac-signs.com/zodiac-signs/pisces/">www.astrology-zodiac-signs.com</a>'}
-    </p>`;  
+        result.innerHTML = `<p style="font-size: 20px;">Pisces${'<br>'} Feb 19 - Mar 20</p>`; 
+        more.innerHTML = `<p>Pisces is a water sign. They are highly sensitive, emotional and intelligent.
+        ${'<br>'}
+        </p>`;  
     }
 } 
 
