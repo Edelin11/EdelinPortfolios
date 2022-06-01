@@ -56,10 +56,18 @@ THE BEGINNING OF THE PROJECTS GRID
 }
 
 .project-name-size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 20px;/* font size of the projects title */
     font-style: oblique;
     color: black;
     text-shadow: 1px 2px 5px #645c5c;
+    box-shadow: 1px 2px 5px #645c5c;
+    border: 1.5px solid rgb(165, 165, 165);
+    border-radius: 10px;
+    width: 100%;
 }
 
 #source, #info, #source2, #info2, #source3, #info3,
@@ -148,9 +156,17 @@ THE BEGINNING OF THE MODAL
     background-color: #f1f1f1;
   }
 
+.backup{
+    background-color: lightpink;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
 
-
-
+.backup:hover{
+    background: rgb(234, 88, 173);
+    color: black;
+}
 
 
 /* #source{

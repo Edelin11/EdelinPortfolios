@@ -9,18 +9,20 @@ body{
 }
 .for_footer{
     background: rgba(255, 81, 110, 0.507);
+    margin-top: 60px;
 }
 #contact{
     position: absolute;
     bottom: 0;
     width: 100%;
 }
-.top{
-    margin-top: -20px;;
-    color: #444;
+hr{
+    margin-top: 60px;
 }
-.top-nav{
-    opacity: 0.9;
+.top{
+    position: relative;
+    top: 50px;
+    color: #444;
 }
 #key-1{
     background: rgba(255, 81, 110, 0.493);
@@ -54,4 +56,7 @@ em{
 }
 .size{
     font-size: 3em;;
+}
+.powerby-size{
+    font-size: 12px;
 }

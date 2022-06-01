@@ -9,15 +9,16 @@ body {
 }
 
 #header{
-  color: chartreuse;
+  color: #444;
   margin: auto;
+  margin-top: 20px;
   max-width: 350px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 0.1px;
 }
 #linea{
-  border: 0.1px solid cyan;
-  max-width: 1000px;
+  border: 0.1px solid #787878;
+  max-width: 95%;
 }
 
 #h2{
@@ -42,12 +43,11 @@ body {
   cursor: pointer; 
 }
 
-
-
 #background__boton2{ /* it has to be inside a div for it to move with the browser size. */
   color: DARKBLUE;
   background: linear-gradient(to right, #FF51B0, #27d3fe);
-  border: 1px solid rgba(21, 118, 148, 0.562);
+  border: 1px solid #787878;
+  border-radius: 10px;
   cursor: pointer;  
   width: 80px;
 }
@@ -60,15 +60,16 @@ body {
   width: 20%; /* position */
   max-width: 600px;
   position: absolute;
-  bottom: 5px;
+  top: 25px;
   right: 1px;
 }
-
-
 #hour{
-  border: 1px solid chartreuse;
-  background-color: #4ECDC4;
-  width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: none;
+  width: 100%;
   padding-left: 5px; 
   margin: 4px auto;
   max-width: 600px;
@@ -81,10 +82,11 @@ body {
   color: #444;
   margin: 2px auto;
 }
-
+/* #4ECDC4  chartreuse*/
 .calendar {
-  border: 1px solid chartreuse;
-  background: #4ECDC4;
+  border: 1px solid #787878;
+  border-radius: 10px;
+  background: none;
   width: 60%;
   max-width: 600px;
   margin: 2px auto;
@@ -103,16 +105,14 @@ body {
   text-transform: uppercase;
 }
 
-.calendar-prev, .calendar-next { /* para las flechas  &#9664; &#9654; */
-  color: #C7F464;
+.calendar-prev, .calendar-next { /* para las flechas  &#9664; &#9654; #C7F464*/
+  color: #787878;
   cursor: pointer; /* salga la mano cuando lo ponga en sima osea el mouse */
   font-size: 1.5em;
 }
-
 .calendar-prev {
   margin-right: auto;
 }
-
 .calendar-next {
   margin-left: auto;
 }
@@ -122,118 +122,122 @@ body {
   grid-template-columns: repeat(7, 1fr); /* divide entre 7 columnas */
   grid-gap: 5px; /* para separar entre si */
 }
-
 .calendar-month, .calendar-year {
   padding: .5em 1em; /* year y mes esten mas separados */
 }
-
 .calendar-item {
   text-align: center;
   line-height: 1.5;
 }
-
 .calendar-todaysDay {
-  background: lightcoral; /* colores de la fecha de hoy */
+  background: none; /* colores de la fecha de hoy */
   color: white;
   width: 60%;
   border-radius: 50%;
-  border: 1px solid chartreuse;
+  border: 1px solid #787878;
   margin: auto;
 }
-
 .calendar-lastMonthDays {
   opacity: .2;
 }
+#div_notes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: -15px;
 
-#Notes{
+}
+#Notes{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #444;
+  margin-top: 50px;
 }
-
-#div_notes{
-  width: 50%;
-  max-width: 500px; /* changes depending on browser's size */
-  margin: auto;
-
-}
-
 #area_texto{
-  border: 3px solid chartreuse;
-  background-color: LIGHTSALMON;
+  border: 1px solid #787878;
+  border-radius: 10px;
+  background: none;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.5em;
-  opacity: 0.5;
-  padding: 5px;   
+  padding: 15px;   
 }
 
-.todo-container1{/* will kepp everything in one side */
-  /* position */
-  width: 20%;
-  max-width: 600px;
+/* To-do list */
+.to-to-container1{
+  width: 50%;
+  padding: 10px;
   margin: auto;
-  position: absolute;
-  top: 100px;
-  left: 3%;
-  justify-content: center;
-  justify-items: center;
+  position: relative;
+  top: 50px;
   box-sizing: border-box;
-
 }
-
 #p{
-  width: 200%;
-  max-width: 600px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
   color: whitesmoke;
   font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
   font-weight: bold;
 }
+.todo-container1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  position: relative;
+  top: 10px;
+  box-sizing: border-box;
 
-#line2{
-  border: 1px solid cyan;
 }
 
 .todo-input{
-  width: 40%;
-  max-width: 600px;
-  margin: auto;
+  width: 50%;
+  margin: 5px;
   padding: 0.5rem;
   font-size: 1rem;
-  border: none;
-  background: whitesmoke;
+  border: 1px solid #787878;
+  border-radius: 10px;
+  background: none;
 }
-
-.todo-button{
-  width: 20%;
-  max-width: 600px;
-  margin: auto;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: none;
-  background: whitesmoke;
-}
-
 .todo-button{
   width: 35px;
-  color: #d88771;
+  color: black;
   cursor: pointer;
-  background: whitesmoke; 
+  background: none; 
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #787878;
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
-
 .todo-button:hover{
-  background: #d88771;
+  background: #787878;
   color: whitesmoke;
 }
-
+.todo-button:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}
+/* Container for the todo list box */
 .todo-container2{
-  width: 15%;
-  max-width: 600px;
-  margin: auto;
-  position: absolute;
-  top: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   border: none;
+  position: relative;
+  margin-top: 15px;
 }
 
 .todo{
@@ -246,8 +250,7 @@ body {
 }
 
 .todo-list{
-  width: -15%;
-  max-width: 600px;
+  width: -100%;
   margin: 15px auto;
   position: relative;
   left: -20px;
@@ -257,7 +260,7 @@ body {
 
 li::before{ /* make the to do list have a number */
   content: counter(li);
-  color: rgb(17, 13, 255);
+  color: rgb(136, 8, 12);
   display: inline-block;
   width: 1em;
   margin-left: -1.9em;
@@ -269,27 +272,25 @@ li::before{ /* make the to do list have a number */
 li{
   counter-increment: li
 }
-
 .todo li{
   flex: 1px;
 }
-
 .trash-btn,
 .complete-btn{
   width: 20%;
-  max-width: 100px;
-  background: #d88771;
+  max-width: 50px;
+  min-width: 30px;
+  background: #a42704;
   color: whitesmoke;
   padding: 0.5rem;
   cursor: pointer;
   font-size: 0.5rem;
 }
-
 .complete-btn{
-  background: rgb(99, 165, 0);
+  background: rgb(26, 44, 0);
 }
 .todo-item{
-  padding: 0rem 0.5rem;
+  padding: 0.5rem 0.8rem;
 }
 .fa-trash, .fa-check{
   pointer-events: none;

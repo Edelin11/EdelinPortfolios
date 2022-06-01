@@ -1,5 +1,6 @@
 // button for the background color changes
 let botonesFOR = document.getElementById('background__boton2'); // buttons for bacground
+let textColor = document.getElementById('area_texto');
 botonesFOR.addEventListener('click', ()=>clicksForward());
 botonesFOR = 1;
 let colorBG = document.getElementById('colores_names');
@@ -10,60 +11,70 @@ const clicksForward = () => {
     if(botonesFOR == 1){
         document.body.style.background = 'linear-gradient(to right, LIMEGREEN, #1B5E20)'; // FOREST
         buttonColor.style.background = 'linear-gradient(to right, LIMEGREEN, #1B5E20)';
+        textColor.style.color = 'black';
         botonesFOR = 2;
         colorBG.innerText = "Forest";
     }
     else if(botonesFOR == 2){
         document.body.style.background = 'linear-gradient(to right, GOLD, MEDIUMSLATEBLUE)'; // SUNSET
         buttonColor.style.background = 'linear-gradient(to right, GOLD, MEDIUMSLATEBLUE)';
+        textColor.style.color = 'black';
         botonesFOR = 3;
         colorBG.innerText = "Sunset";
     }
     else if(botonesFOR == 3){
         document.body.style.background = 'linear-gradient(to right, CRIMSON, #212121)'; // VAMPIRE
         buttonColor.style.background = 'linear-gradient(to right, CRIMSON, #212121)';
+        textColor.style.color = 'white';
         botonesFOR = 4;
         colorBG.innerText = "Vampire";
     }
     else if(botonesFOR == 4){
         document.body.style.background = 'linear-gradient(to right, HOTPINK , THISTLE)'; // CANDY
         buttonColor.style.background = 'linear-gradient(to right, HOTPINK , THISTLE)';
+        textColor.style.color = 'black';
         botonesFOR = 5;
         colorBG.innerText = "Candy";
     }
     else if(botonesFOR == 5){
-        document.body.style.background = 'linear-gradient(to right, ROYALBLUE, AQUA'; // OCEAN
-        buttonColor.style.background = 'linear-gradient(to right, ROYALBLUE, AQUA';
+        document.body.style.background = 'linear-gradient(to right, ROYALBLUE, AQUA)'; // OCEAN
+        buttonColor.style.background = 'linear-gradient(to right, ROYALBLUE, AQUA)';
+        textColor.style.color = 'black';
         botonesFOR = 6;
         colorBG.innerText = "Ocean";
     }
     else if(botonesFOR == 6){
-        document.body.style.background = 'linear-gradient(to right, AQUAMARINE, TOMATO'; // SUNRISE
-        buttonColor.style.background = 'linear-gradient(to right, AQUAMARINE, TOMATO';
+        document.body.style.background = 'linear-gradient(to right, AQUAMARINE, TOMATO)'; // SUNRISE
+        buttonColor.style.background = 'linear-gradient(to right, AQUAMARINE, TOMATO)';
+        textColor.style.color = 'black';
         botonesFOR = 7;
         colorBG.innerText = "Sunrise";
     }
     else if (botonesFOR == 7 ){
         document.body.style.background = 'linear-gradient(to right, #000000, #FFFFFF)'; // NOIR & BLANC
         buttonColor.style.background = 'linear-gradient(to right, #FFFFFF, #000000)';
+        textColor.style.color = 'black';
         botonesFOR = 8;
         colorBG.innerText = "Noir & Blanc";
     }
     else if (botonesFOR == 8 ){
         document.body.style.background = 'linear-gradient(to right, #FF51B0, TOMATO)'; // PINK AND TOMATO
         buttonColor.style.background = 'linear-gradient(to right, #FF51B0, TOMATO)';
+        textColor.style.color = 'black';
         botonesFOR = 9;
         colorBG.innerText = "red";
     }
     else if (botonesFOR == 9 ){
         document.body.style.background = 'rgba(201, 201, 201, 0.986)'; // Neutral
         buttonColor.style.background = 'rgba(201, 201, 201, 0.986)';
+        textColor.style.color = 'black';
         botonesFOR = 10;
         colorBG.innerText = "Neutral";
     }
     else if (botonesFOR == 10 ){
         document.body.style.background = 'linear-gradient(to right, #FF51B0, #27d3fe)'; // PINK AND BLUE
         buttonColor.style.background = 'linear-gradient(to right, #FF51B0, #27d3fe)';
+        textColor.style.color = 'black';
         botonesFOR = 1;
         colorBG.innerText = "Pink and Blue";
     }

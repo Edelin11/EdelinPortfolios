@@ -1,44 +1,59 @@
 body, html {
     height: 100%;
-    color: #777;
+    color: white;
     line-height: 1.8;
-    background: white;
+    background: #E8E3CC;
 }
-
 .title{
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 1.5em;
-    color: #777;
-    padding: 10px;
+    color: #444;
 }
 .for_footer{
-    background: rgba(255, 81, 110, 0.507);
-    margin-top: 100px;
+    background: #DB3F29;
 }
-.size{
-    font-size: 3em;;
+.powerby-size{
+    font-size: 12px;
 }
-/* #contact{
+
+.box{
     position: relative;
-    bottom: -200px;
-} */
+    margin-top: 90px;
+    margin-bottom: 200px;
+}
 .box-all{
-    background-color: rgba(255, 81, 110, 0.137);
-    margin: 10px;
+    background-color: #D7A449;
+    margin: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex: 1 1 250px;
+    width: 15vw;
+    height: 60vh;
+    border-radius: 10px;
 }
 
+/* this is the cards sizes and for what it's inside. */
 .memory-game {
-    width: 300px;
-    height: 300px; 
+    width: 500px;
+    height: 300px;  
     display: flex;
     flex-wrap: wrap;
-    font-size: 0.6em;
+    text-align: center;
+    font-size: 0.5em;
 }
-  
+/* this is the size of the letters for the first game. */
+.size-for-l{
+    font-size: 2.5em;
+}
+label{
+    color: rgb(0, 0, 0);
+    font-style: oblique;
+    text-shadow: 1px 2px 2px #0b1f6561;
+    margin-bottom: 5px;
+    font-size: 2vw;
+}
+
 .memory-card {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
@@ -56,11 +71,14 @@ body, html {
   
 .memory-card:active {
     transform: scale(0.97);
-    transition: transform .2s;
+    -webkit-transform: scale(0.97);
+    transition: transform .1s;
+    -webkit-transition: transform .1s;
 }
   
 .memory-card.flip {
-    transform: rotateY(180deg);
+    transform: rotateY(185deg);
+    -webkit-transform: rotateY(185deg);
 }
   
 .front-face, .back-face {
@@ -71,9 +89,15 @@ body, html {
    
 }
 .front-face{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #d19;
+    font-weight: bold;
     padding: 10px;
-    -webkit-background: rgba(165, 165, 165, 0.493);
-    background: rgba(165, 165, 165, 0.493);
+    -webkit-background: white;
+    background: white;
     -webkit-box-shadow: 2px 2px 5px 1px rgb(175, 175, 175);
     box-shadow: 2px 2px 5px 1px rgb(175, 175, 175);
     -webkit-backface-visibility: hidden;
@@ -82,8 +106,8 @@ body, html {
 
 .back-face {
     padding: 20px;
-    -webkit-background: rgba(238, 238, 238, 0.849);
-    background: rgba(238, 238, 238, 0.849);
+    -webkit-background: #0B1F65;
+    background: #0B1F65;
     -webkit-box-shadow: 2px 2px 5px 1px rgb(175, 175, 175);
     box-shadow: 2px 2px 5px 1px rgb(175, 175, 175);
     -webkit-backface-visibility: hidden;
@@ -92,14 +116,19 @@ body, html {
   
 .front-face {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 button{
-    width: 50px;
-    border: 1px solid rgba(238, 238, 238, 0.849);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+    width: 30%;
+    border: 1px solid #D7A449;
     border-radius: 6px;
-    -webkit-background: rgba(255, 81, 110, 0.137);
-    background: rgba(255, 81, 110, 0.137);
+    -webkit-background: #D7A449;
+    background: #D7A449;
     -webkit-box-shadow: 2px 2px 5px 1px rgba(175, 175, 175, 0.774);
     box-shadow: 2px 2px 5px 1px rgba(175, 175, 175, 0.719);
 }

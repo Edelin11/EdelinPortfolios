@@ -1,0 +1,34 @@
+body, html {
+    height: 100%;
+    color: white;
+    line-height: 1.8;
+    background: #E8E3CC;
+}
+.for_footer{
+    position: absolute;
+    width: 100vw;
+    bottom: -50px;
+    background: #DB3F29;
+}
+.powerby-size{
+    font-size: 12px;
+}
+.top{
+    padding-bottom: 50px;
+}
+.title{
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #444;
+}
+.p1{
+    color: #444;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}

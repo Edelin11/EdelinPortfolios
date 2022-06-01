@@ -1,12 +1,19 @@
 body, html {
     height: 100%;
-    color: #777;
+    color: #C0C0C0;
     line-height: 1.8;
-    background: white;
+    background: #31458c;
 }
 .for_footer{
+    position: absolute;
+    width: 100%;
+    bottom: -50px;
     background: rgba(255, 81, 110, 0.507);
 }
+.powerby-size{
+    font-size: 12px;
+}
+
 .top{
     padding-bottom: 150px;
 }
@@ -14,68 +21,146 @@ body, html {
 .title{
     margin-top: 50px;
     font-size: 1.5em;
-    color: #777;
+    color: #C0C0C0;
     padding: 10px;
 }
-
-
-/* The buttons of the figures */
-.forCircle{
-    border: 1px solid white;
-    border-radius: 6px;
-    background: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 5px;
+.center-shape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 60px;
-    box-shadow: 2px 2px 5px 1px rgb(175, 175, 175);
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-.forCircle:hover {
-    -webkit-background-color: rgb(209, 207, 207);;
-    background-color: rgb(209, 207, 207);
-    border: 1px solid rgb(209, 207, 207);
-}
-
-.forCircle:active {
-  background-color: white;
-  box-shadow: 0 5px rgb(102, 102, 102);
-  transform: translateY(4px);
-}
-
-.forTriangle{
-    border-radius: 6px;
-    border: 1px solid white;
-    background: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 5px;
-    box-shadow: 2px 2px 5px 1px rgb(175, 175, 175);
-    text-align: center;
-    width: 80px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.forTriangle:hover {
-    -webkit-background-color: rgb(209, 207, 207);
-    background-color: rgb(209, 207, 207);
-    border: 1px solid rgb(209, 207, 207);
-}
-
-.forTriangle:active {
-  background-color: white;
-  box-shadow: 0 5px rgb(102, 102, 102);
-  transform: translateY(4px);
+    margin-top: 130px;
+    margin-bottom: 100px;
 }
 
 /* The figures */
+
+/* THIS IS THE HEART ICON SHAPE */
+.heart-color{
+    color: #31458c;  
+}
+.heart{
+    transform: scale(2, 2);;
+    color: red;
+    animation: heart 7s infinite linear; 
+    text-shadow: 0px 1px 10px gainsboro, 0 -2px 8px #d19;
+}
+.heart2{
+    position: relative;
+    left: -23px;
+    top: -10px;
+    transform: scale(0, 0);;
+    color: red;
+    animation: heart2 7s infinite linear; 
+    text-shadow: 0px 1px 10px gainsboro, 0 -2px 8px #d19;
+}
+
+@keyframes heart{
+    0%{
+        transform: scale(2, 2);
+        text-shadow: 0px 1px 10px gainsboro, 0 -2px 8px #d19;
+        opacity: 1; 
+    }
+    50%{
+        transform: scale(15, 15);
+        text-shadow: 0px 1px 10px #A16AE8, 0 -2px 8px #FD49A0;
+        opacity: 1; 
+    }
+    20%{
+        transform: scale(15, 15);
+        text-shadow: 0px 1px 10px #603F8B, 0 -2px 8px #B4FEE7;
+        opacity: 1; 
+    }
+    0%{
+        transform: scale(2, 2);
+        text-shadow: 0px 1px 10px gainsboro, 0 -2px 8px #d19;
+        opacity: 1; 
+    }
+}
+@keyframes heart2{
+    0%{
+        transform: scale(0, 0);
+        text-shadow: 0px 1px 10px gainsboro, 0 -2px 8px #d19;
+        opacity: 1; 
+    }
+    50%{
+        transform: scale(12, 12);
+        text-shadow: 0px 1px 10px #A16AE8, 0 -2px 8px #FD49A0;
+        opacity: 1; 
+    }
+    0%{
+        transform: scale(0, 0);
+        text-shadow: 0px 1px 10px red, 0 -2px 8px #d19;
+        opacity: 1; 
+    }
+}
+
+/* THIS IS THE STAR ICON SHAPE */
+.star-color{
+    color: #31458c;  
+}
+.star{
+    transform: scale(2, 2);;
+    color: red;
+    animation: star 7s infinite linear; 
+    text-shadow: 0px 1px 10px gainsboro, 0 -2px 8px #d19;
+}
+.star2{
+    position: relative;
+    left: -25px;
+    transform: scale(0, 0);;
+    color: red;
+    animation: star2 7s infinite linear; 
+    text-shadow: 0px 1px 10px gainsboro, 0 -2px 8px #d19;
+}
+
+@keyframes star{
+    0%{
+        transform: scale(2, 2);
+        text-shadow: 0px 1px 10px gold, 0 -2px 8px #B78326;
+        opacity: 1; 
+    }
+    50%{
+        transform: scale(15, 15);
+        text-shadow: 0px 1px 10px #FF6501, 0 -2px 8px #B78326;
+        opacity: 1; 
+    }
+    20%{
+        transform: scale(15, 15);
+        text-shadow: 0px 1px 10px #75E6DA, 0 -2px 8px #FF6501;
+        opacity: 1; 
+    }
+    0%{
+        transform: scale(2, 2);
+        text-shadow: 0px 1px 10px gainsboro, 0 -2px 8px #ECF87F;
+        opacity: 1; 
+    }
+}
+@keyframes star2{
+    0%{
+        transform: scale(2, 2);
+        text-shadow: 0px 1px 10px gainsboro, 0 -2px 8px #d19;
+        opacity: 1; 
+    }
+    50%{
+        transform: scale(12, 12);
+        text-shadow: 0px 1px 10px #B78326, 0 -2px 8px #ECF87F;
+        opacity: 1; 
+    }
+    0%{
+        transform: scale(2, 2);
+        text-shadow: 0px 1px 10px gold, 0 -2px 8px #d19;
+        opacity: 1; 
+    }
+}
+
+
+/* THIS IS FOR THE TRIANGLE SHAPE BADLY DESIGNED BY ME */
+/* container for triangle */
 #container{
-    /* container for triangle */
-    transform: translate(-0%, 0%); 
+    position: relative;
+    top: -110px;
+    transform: translate(50%, 50%); 
 }
 .tri1-1, .tri1-2, .tri1-3{
     position: absolute;
@@ -240,57 +325,63 @@ body, html {
     }
 }
 
-/* Here starts the circle  */
 
-#container2{
-    transform: translate(0%, 0%);
-}
 
-.circle1{
-    width: 100px;
-    height: 100px;;
-    border-radius: 100px 100px;
-    border: 5px solid #e4adffd7;
-    background: space rgba(238, 238, 238, 0.349);
-    opacity: 80%;
-    box-shadow: 5px 8px 18px 18px #e4adffd7;
-    animation: rotate 10s infinite ease-in-out;  
+/* Dropdown Button */
+.dropbtn {
+    background-color: #7a8fda;
+    box-shadow: 0px 2px 10px 2px rgba(196, 205, 213, 0.827);
+    color: #C0C0C0;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
 }
-.circle2{
+  
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
     position: relative;
-    top: -75px;
-    left: 25px;
-    width: 50px;
-    height: 50px;;
-    border-radius: 100px 100px;
-    border: 0px solid #e4adffd7;
-    background: space rgba(238, 238, 238, 0.349);
-    opacity: 80%;
-    box-shadow: 5px 8px 18px 18px #e4adffd7;
-    animation: rotate 10s infinite ease-in-out;  
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 81, 110, 0.507);;
+    min-width: 150px;
+    left: -10px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+  
+#triangulo, #corazon, #estrella{
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 2px 10px 2px rgba(196, 205, 213, 0.827);
+    width: 80%;
+    color: #31458c;
+}  
+#triangulo:hover, #corazon:hover, #estrella:hover{
+    background-color: #2980B9;
 }
 
-@keyframes rotate{
-    0%{
-        -webkit-transform: scale(0.5);
-        -ms-transform: scale(0.5);
-        transform: scale(0.5);
-    }
-    25%{
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(2);
-    }
-    60%{
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(2);
-    }
-    100%{
-        -webkit-transform: scale(0.5);
-        -ms-transform: scale(0.5);
-        transform: scale(0.5);
-    }
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
 }
-
-
