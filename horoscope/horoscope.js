@@ -32,7 +32,21 @@ var currentSign = "pig";
 
 const forChineseYear =()=>{
     var mySign = (fromyear - getyear.value)%12;
-
+    if(mySign == 3 && getyear.value == 0){
+        console.log('is', 'Tiger');
+        cSign.innerHTML = `
+        <h4>2022 Chinese Zodiac Sign Is The Tiger</h4>
+        <p>- Enter your born year to know your Chinese sign - ${'<br>'}${'<br>'}
+        "Tigers are kind and benevolent. Animals, jazz music or
+        other things that call for imagination are good for them.
+        They rarely feel tired and have rich emotions.
+        Sometimes though, they make brash decisions and are hard to control.
+        But no matter how many difficulties or obstacles they face, 
+        they will never give up. In the end, Tigers live an average 
+        life—there are times of joy, sadness and sometimes disappointment."
+        ${'<br>'}${'<br>'}Read More From Source At ${'<a href="https://chinesenewyear.net/zodiac/tiger/">chinesenewyear.net</a>'} 
+        ${'<br>'}Chinese 2022 New Year, February 1st</p>`;
+    }else
     if(mySign == 12 || (mySign == 0)){  
         cSign.innerHTML = `
         <h4>Your Chinese Zodiac Sign Is The PIG</h4>
@@ -234,7 +248,31 @@ const forAries =()=>{
     if(getDay <= 31 && getMonth == aries[0] && getDay >= aries[1] || getMonth[0] == aries[2] &&  getDay <= aries[3] ){
         result.innerHTML = `<p style="font-size: 20px;">Aries ${'<br>'} March 21 - April 19</p>`;
         more.innerHTML = `
-        <p>Aries is a fire sign. Aries people are outgoing, friendly and popular.${'<br>'}
+        <p>Aries is the first astrological sign in the zodiac. 
+        Is a fire element and ruled by Mars and it is represented with the color red. 
+        Their zodiac symbol is the Ram. A sheep with curved horns that represents fertility, 
+        springtime, the will to win a fight with courage and determination.${'<br>'}${'<br>'}
+        Personality Traits:${'<br>'}${'<br>'}
+        Some of their positive traits are: determined, powerful, charismatic, enthusiastic, 
+        passionate, friendly, outgoing. They could be the soul of the party. They make a lot of friends. 
+        People are drawn to them because of their friendly and charismatic personality. They have the fire, 
+        power and energy to fight for what they believe in, and to fight for what is right.${'<br>'}${'<br>'}
+        Some of their negative traits are: short-tempered, aggressive, stubborn, impatient. 
+        They don’t loose an argument and because they are a fire sign they have the fire, 
+        energy and power to keep an argument until they win it.${'<br>'}${'<br>'}
+        Aries in Love.${'<br>'}${'<br>'}
+        They are very passionate, attentive, energetic and always there for you, 
+        so they shower their loved one with a lot of affection, attention, gifts. 
+        They tend to forget about themselves when they are in love. They have great 
+        compatibility with all of the signs of the zodiac including Aries with Aries 
+        which could be a very fiery and passionate relationship.
+        ${'<br>'}${'<br>'}
+        In the tarot, Aries is The Emperor. An authority figure, wise and powerful. 
+        The Emperor sits in a throne and is a leader. Like The Emperor, Aries are 
+        business oriented people who can achieve anything they want with perseverance and self-control 
+        in all areas. The Emperor attracts money and abundance into your life. 
+        Their focus on obtaining material success can make them forget about love and about 
+        their emotions sometimes. 
         </p>`;
     } 
    
@@ -245,8 +283,27 @@ const forTaurus =()=>{
     if(getDay <= 30 && getMonth == taurus[0] && getDay >= taurus[1] || getMonth[0] == taurus[2] && getDay <= taurus[3] ){
         result.innerHTML = `<p style="font-size: 20px;">Taurus ${'<br>'} April 20 - May 20</p>`;
         more.innerHTML = `
-        <p>Taurus is an earth sign. Taurus people are very ambitious and sucessfull. 
-            ${'<br>'}
+        <p>Taurus is the second sign of the zodiac. Is an earth element ruled by 
+        Venus the planet of love and attraction. It is represented by the color green. 
+        Their zodiac symbol is a bull which represents strength, power, determination, perseverance. 
+        They are bull-headed and won’t stop until they achieve their goals. Their nature is to produce, 
+        create things and enjoy a laid-back luxurious life. 
+        ${'<br>'}${'<br>'}Personality Traits:${'<br>'}${'<br>'}
+        Some of their positive traits are: Responsible, reliable, calm, hard-working, 
+        knowledgable, practical, patient, kind, grounded. They are very hard working, 
+        entrepreneurs, social and they like luxury and everything that shines and it’s beautiful, 
+        so they work hard to obtain all of that. They are very sensual and attractive. 
+        This is one of the most reliable signs in the zodiac. They want to make a name for 
+        themselves and succeed in life. They are very grounded and see life from a realistic 
+        perspective. Their driving force is their will to succeed and find security.
+        ${'<br>'}${'<br>'}
+        Some of their negative traits are: Easy to anger, stubbornness, possessiveness, 
+        negative thoughts, self doubts. They can be very fiery when provoked. 
+        They tend to focus on the negatives too often. They can be possessives of their partner 
+        and jealousy can be a problem in their relationships. They tend to self sabotage themselves 
+        with negative thinking.${'<br>'}${'<br>'}
+        In the tarot, Taurus is The Hierophant. This is a positive 
+        card that represents a wise, mature person. It represents a stable situation that can be resolve.
         </p>`; 
     }
     

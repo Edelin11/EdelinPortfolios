@@ -1,5 +1,5 @@
 body, html {
-    color: #777;
+    color: #444;
     line-height: 1.8;
     background: #aac1ee;
 }
@@ -7,15 +7,17 @@ body, html {
     background: goldenrod;
     position: relative;
     width: 100%;
-    bottom: -30vh;
-    
+    bottom: -30vh; 
 }
 .powerby-size{
     font-size: 12px;
 }
+hr{
+    margin-top: 8px;
+}
 .title{
     color: #444;
-    font-size: 3vw;
+    font-size: min(max(16px, 3vw), 30px);
     margin-top: 30px;
 }
 .all-inside{
@@ -23,14 +25,16 @@ body, html {
     width: 100%;
     margin-bottom: 100px;
 }
-
 #btn-coll{
     box-shadow: 2px 2px 5px 1px rgb(224, 85, 85);
+}
+.inp{
+    color: #777;
 }
 .zodiac{
     display: grid;
     grid-template-columns: auto auto auto;
-    margin: 20px;
+    margin: 15px;
     padding: 5px;
 }
 input{
@@ -42,6 +46,7 @@ input{
     box-shadow: 0px 1px 5px 1px goldenrod;
 }
 #zodiac-btn{
+    color: #444;
     border: none;
     border-radius: 10px;
     box-shadow: 0px 1px 5px 1px goldenrod;
@@ -49,6 +54,7 @@ input{
 #zodiac-btn:hover{
     background-color: #ccc;
     border: 1px solid #ccc;
+
 }
 #zodiac-btn:active{
     background-color: #eee;
