@@ -169,36 +169,6 @@ THE BEGINNING OF THE MODAL
 }
 
 
-/* #source{
-    
-    width: 56px;
-}
-.about{
-    border: 2px solid #777;
-    width: 56px;
-}
-#myModal{
-    border: 2px solid #777;
-    width: 56px;
-    
-} */
-
 /*
-#myNavbar, a{
-    margin: 5px;
-    list-style: none;
-    text-decoration: none;
-    color: #777;
-}
-#myNavbar:hover{
-    color: #000;
-    cursor: pointer;
-    text-decoration: none;
-}
-.about_{
-    margin: 20px;
-}
-
-
 <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium" href="javascript:void(0);"  onclick="toggleFunction()" title="Toggle Navigation Menu" > </a>
 */
