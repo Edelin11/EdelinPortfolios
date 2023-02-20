@@ -82,6 +82,15 @@ THE BEGINNING OF THE PROJECTS GRID
 #info4:hover, #info5:hover, #info6:hover{
     cursor: pointer;
 }
+.textC {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: -35px;
+  width: 100%;
+  text-align: center;
+}
 /* 
 THE BEGINNING OF THE MODAL
 */
