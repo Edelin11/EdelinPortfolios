@@ -27,11 +27,10 @@ function checkForMatch() { /* check if card flipped one matches second flipped c
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-
   resetBoard();
 }
 
-function unflipCards() {
+function unflipCards() { /* Time the animation of the cards being flipped is going to last */
   lockBoard = true;
   setTimeout(() => {
     firstCard.classList.remove('flip');
@@ -40,12 +39,12 @@ function unflipCards() {
   }, 1500);
 }
 
-function resetBoard() {
+function resetBoard() { 
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
 
-(function shuffle() {
+(function shuffle() { // The cards are arrange in a random order every time you restart.
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos;
