@@ -59,8 +59,8 @@ h6{
     border-radius: 20px;
     background: rgba(88, 85, 91, 0.782);
     width: 24rem;
-    height: 70vh;
-    min-height: 500px;
+    height: 80vh;
+    min-height: 550px;
     box-shadow: 0px 5px 20px 0px rgb(226, 43, 150), -8px 0px 20px -3px rgb(170, 24, 255);
 }
 hr{
@@ -106,7 +106,8 @@ hr{
     opacity: 0.9;
     padding: 3px;
     margin: auto;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+    max-height: 90vh;
     box-shadow: 0px 5px 20px 0px rgb(226, 43, 150);
 }
 .b{
