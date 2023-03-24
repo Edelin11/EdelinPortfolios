@@ -12,75 +12,53 @@
     <title>Calculator</title>
 </head>
 <body>
-    <h1 class="w3-center top">Calculator</h1> <hr>
     <!-- Container (Carculator Section) -->
-    <div class="w3-content w3-container w3-padding-64">
-   
-        <form name="calculator">
-        <div class="box w3-center pt-2 my-3 col-6 container">
-            <input class="answer col-12" id="key-1" type="textfield" name="result" value="">
-            <br>
-            <input class="col-3" id="key-1" type="reset" value="c">
-            <input class="col-3" id="key-1" type="button" value="1" onClick="document.calculator.result.value+='1'">
-            <input class="col-3" id="key-1" type="button" value="2" onClick="document.calculator.result.value+='2'">
-            <input class="col-3" id="key-1" type="button" value="3" onClick="document.calculator.result.value+='3'">
-
-            <input class="col-3" id="key-1" type="button" value="4" onClick="document.calculator.result.value+='4'">
-            <input class="col-3" id="key-1" type="button" value="5" onClick="document.calculator.result.value+='5'">
-            <input class="col-3" id="key-1" type="button" value="6" onClick="document.calculator.result.value+='6'">
-            
-            <input class="col-3" id="key-1" type="button" value="7" onClick="document.calculator.result.value+='7'">
-            <input class="col-3" id="key-1" type="button" value="8" onClick="document.calculator.result.value+='8'">
-            <input class="col-3" id="key-1" type="button" value="9" onClick="document.calculator.result.value+='9'">
-            <input class="col-3" id="key-1" type="button" value="0" onClick="document.calculator.result.value+='0'">
-
-            <input class="col-3" id="key-1" type="button" value="+" onClick="document.calculator.result.value+='+'">
-            <input class="col-3" id="key-1" type="button" value="*" onClick="document.calculator.result.value+='*'">
-            <input class="col-3" id="key-1" type="button" value="/" onClick="document.calculator.result.value+='/'">
-            
-            <input class="col-3" id="key-1" type="button" value="-" onClick="document.calculator.result.value+='-'">
-            <input class="col-12" id="key-1" type="button" value="=" onClick="document.calculator.result.value=eval(document.calculator.result.value)">
-        </div>    
-    </form>   
+    <h1 class="w3-center neon-text mb-5">The Neon Calculator</h1>
+    <div class="center">
+    
+        <div class="calc-container card container-fluid">
+            <h6>TNC</h6>
+            <div class="calc-solar"></div>
+            <div class="calc-results-container card container">
+                <div class="calc-results-container2 card-body container output">
+                    <div data-previous-operand class="previous-operand"></div>
+                    <div data-current-operand class="current-operand"></div>
+                </div>
+            </div>  
+            <hr class="w3-center ">
+            <div class="calc-numbers-container container mb-3 card-body row">
+                <div class="col container b">
+                    <button data-all-clear class="span-two btn-1 ">AC</button>
+                    <button data-delete class="btn-1">C</button>
+                    <button data-number class="btn-1">.</button>
+                    <button data-number class="btn-1">9</button>
+                    <button data-number class="btn-1">8</button>
+                    <button data-operation class="btn-1">÷</button>  
+                    <button data-number class="btn-1">7</button>
+                    <button data-number class="btn-1">6</button>
+                    <button data-operation class="btn-1">*</button>
+                    <button data-number class="btn-1">5</button>
+                    <button data-number class="btn-1">4</button>
+                    <button data-operation class="btn-1">-</button>
+                    <button data-number class="btn-1">3</button>
+                    <button data-number class="btn-1">2</button>
+                    <button data-operation class="btn-1">+</button>
+                    <button data-number class="btn-1">1</button>
+                    <button data-number class="btn-1">0</button>
+                    <button data-equals class="span-two btn-1">=</button>
+                </div>
+            </div>
+        </div>
+       
  </div> 
 
 <!-- Footer -->
-<footer class="w3-center w3-padding-32 w3-opacity w3-hover-opacity-off for_footer" >
-    <h6>A Simple Calculator</h6>
-    <div class="w3-section">
-      <div class="w3-margin-bottom w3-center" style="font-size: 12px;">
-          <i class="fa fa-envelope fa-fw "></i> Email: soyyook_8825@gmail.com
-      </div>
-      <a href="https://www.instagram.com/watashiwaedelin/" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"> </i></a>
-      <a href="https://github.com/Edelin11" title="GitHub"> <i class="fa fa-github w3-hover-opacity"></i></a>
-      <a href="https://www.linkedin.com/in/edelin-espino-48680480/" title="LinkedIn"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    </div>
-    <p class="powerby-size">Powered by <a href="/EdelinPortfolios/index">Edelin</a> <a href="https://github.com/Edelin11">GitHub</a> And <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<footer class="w3-center w3-padding-16 w3-opacity w3-hover-opacity-off for_footer" >
+    <p class="powerby-size">Powered by <a href="/EdelinPortfolios/index">Edelin</a> And <a href="https://github.com/Edelin11">GitHub</a> </p>
 </footer>
 
 <script src="https://kit.fontawesome.com/9be300201e.js" crossorigin="anonymous"></script>
-<script>
-    // Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+<script src="../Calculator/calc.js"></script>
 
 </body>
 </html>
