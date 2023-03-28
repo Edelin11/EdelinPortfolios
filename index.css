@@ -1,4 +1,5 @@
 body, html {
+  background-color: #000000;
     height: 100%;
     color: #777;
     line-height: 1.8;
@@ -9,8 +10,8 @@ body,h1,h2,h3,h4,h5,h6 {
 }
 .top-nav{
     opacity: 0.9;
+    color: white;
 }
-
 .for_header, img{
     display: grid;
     place-items: center;
@@ -25,53 +26,78 @@ body,h1,h2,h3,h4,h5,h6 {
 #more{
     display: none;
 }
-
-.for_footer{
-    background: rgba(255, 81, 110, 0.507);
+.isize{
+  font-size: 20px;
 }
 
+.for_footer{
+    background: rgba(255, 6, 159, 0.727);
+    color: white;
+}
+#about{
+  margin-top: 80px;
+  background: rgb(0, 0, 0);
+  border-bottom: 1px solid black;
+  border-radius: 20px;
+  color: white;
+}
 /* 
 THE BEGINNING OF THE PROJECTS GRID
 */
+.shadowAll{
+  border-bottom: 1px solid black;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0px 10px 80px -8px rgb(187, 10, 113), 0px -10px 80px -8px rgb(132, 38, 232),
+  0px 8px 250px -15px rgb(24, 107, 249);
+}
 .work-box{
-    box-shadow: 0px 0 12px 2px rgb(175, 175, 175);
-    padding: 15px;
-    margin: 0px;
-    margin-bottom: 20px;
-    border: 0px solid #444;
-    border-radius: 10px;
+  padding: 15px;
+  margin: 0px;
+  margin-bottom: 20px;
+  border: 0px solid #444;
+  border-radius: 10px;
 }
 .work-box, a{
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 .pd{
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .pdw{
-    padding-bottom: 30px;
+  padding-bottom: 30px;
+  color: rgb(255, 255, 255);
+}
+.card-title{
+  font-size: 1.5em;
+}
+.card-title:hover, .card-title:focus, .card-title:active{
+  cursor: pointer;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 1px #fff,
+    0 0 2px rgb(224, 30, 104),
+    0 0 15px rgb(42, 25, 228),
+    0 0 10px rgb(170, 24, 255),
+    0 0 10px rgb(224, 30, 104),
+    0 0 30px rgb(135, 24, 141),
+    0 0 1px rgb(170, 24, 255);
 }
 
 .proj-holder{
-    border: 1px solid rgb(197, 192, 192);;
-    padding: 5px;
-    margin: 5px;
-    margin-top: 20px;
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 20px;
 }
-
-.project-name-size{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20px;/* font size of the projects title */
-    font-style: oblique;
-    color: black;
-    text-shadow: 1px 2px 5px #645c5c;
-    box-shadow: 1px 2px 5px #645c5c;
-    border: 1.5px solid rgb(165, 165, 165);
-    border-radius: 10px;
-    width: 100%;
+.proj-holder:hover, .proj-holder:focus, .proj-holder:active{
+  border: 1px solid rgb(160, 12, 240);
+  box-shadow: 0px 10px 10px -8px rgb(187, 10, 113);
 }
 
 #source, #info, #source2, #info2, #source3, #info3,
@@ -85,8 +111,9 @@ THE BEGINNING OF THE PROJECTS GRID
 #info4:hover, #info5:hover, #info6:hover{
     cursor: pointer;
 }
+ /* the three projects together */
 .textC {
-  color: #000000;
+  color: #ffffff;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -144,6 +171,7 @@ THE BEGINNING OF THE MODAL
 }
 
 /* Style the button that is used to open and close the collapsible content */
+ /* NOT BEING USED */
 .collapsible {
     background-color: #eee;
     color: #444;
@@ -168,14 +196,14 @@ THE BEGINNING OF THE MODAL
     overflow: hidden;
     background-color: #f1f1f1;
   }
-
+  /* NOT BEING USED */
 .backup{
     background-color: lightpink;
-    color: black;
+    color: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 10px;
 }
-
+ /* NOT BEING USED */
 .backup:hover{
     background: rgb(234, 88, 173);
     color: black;
@@ -213,7 +241,7 @@ THE BEGINNING OF THE MODAL
 }
 /* Caption text */
 .text {
-  color: #000000;
+  color: #ffffff;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -277,7 +305,7 @@ THE BEGINNING OF THE MODAL
   }
   /* Caption text */
   .text2 {
-    color: #000000;
+    color: #ffffff;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -342,7 +370,7 @@ THE BEGINNING OF THE MODAL
   }
   /* Caption text */
   .text3 {
-    color: #000000;
+    color: #ffffff;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
@@ -406,7 +434,7 @@ THE BEGINNING OF THE MODAL
 }
 /* Caption text */
 .text4 {
-  color: #000000;
+  color: #ffffff;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;

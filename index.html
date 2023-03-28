@@ -15,14 +15,16 @@
 <body>
     <div class="w3-top top-nav">
         <div class="w3-bar" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-white w3-hide-medium" href="javascript:void(0);"  onclick="toggleFunction()" title="Toggle Navigation Menu"> <i class="fa fa-bars"></i> </a>
+            <a class="w3-bar-item w3-button w3-hover-white w3-hide-medium" href="javascript:void(0);"  onclick="toggleFunction()" title="Toggle Navigation Menu"> 
+              <i class="fa fa-bars"></i> 
+            </a>
             <a href="#home" class="w3-bar-item w3-button ">HOME</a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
             <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
             <a href="#contact"" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>CONTACT</a>
         </div>
          <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+  <div id="navDemo" class="w3-bar-block w3-dark w3-hide w3-hide-large w3-hide-medium">
         <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
         <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
         <a href="#contact"" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
@@ -33,88 +35,42 @@
     <div class="for_header" id="home">
       <img src="laptop-11.jpg" alt="">
         <div class="w3-display-middle" style="white-space:nowrap;">
-          <a href="#projects" > <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity w3-hide-medium w3-hide-small"
-            title="Edelin's Portfolio">Edelin Espino / Web Developer
-          </span>
-        </a>
+          <a href="#projects" >
+            <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity w3-hide-medium w3-hide-small"
+            title="Edelin's Portfolio">Edelin Espino / Web Developer</span>
+          </a>
         </div>
         <div class="w3-display-middle to-center" style="white-space:nowrap;">
           <a  href="#projects"> <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity w3-hide-large"
-            title="Edelin's Portfolio">Edelin's Portfolio
+            title="Edelin's Portfolio">Web Developer
           </span>
         </a>
         </div>
     </div>
     
     <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em></em></p>
-  <p class="w3-center">I graduated high school in 2013 and started college right away. <br>
-    Upon completing nearly four years of college without a clear career path in sight, 
-    I ultimately decided to pursue computer science despite my limited understanding of the field.
-    However, I was fully confident in my ability to learn anything I set my mind to.
-  <br>And that's how it all started.
-  </p>
-  <br>
+  <div class="w3-content w3-container w3-padding-64 card" id="about">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <div class="card-body">
+      <p class="w3-center">My name in Edelin Espino and I'm a Software Developer with a focus on Front-end Development.
+      <br>I have a degree in Computer Science and currently taking an UI/UX Designer course from California Institute of the Arts.
+      <br>I am  in the constant pursuit of knowledge, growth and evolution. Which is why my style is also constantly changing as I evolve.
+      </p>
+    </div>
+  </div>
 
 
     <!-- Container (Portfolio Section) -->
-    <h1 id="projects"></h1>
-  <div class="w3-content w3-container w3-padding-64" >
+  <div class="w3-content w3-container w3-padding-64 shadowAll" >
     <h1 class="w3-center pdw">My Projects</h1>
 
         <!-- First three projects -->
-        <div class="container-fluid w3-row-padding work-box w3-center p-3">
-          <div class="card w3-col m4 proj-holder pd " style="width: 100%; max-width: 600px">
-      
-            <div class="mySlides3">
-              <div class="numbertext3">1 / 6</div>
-                <img src="miltitask.jpg" class="card-img-top mt-5 mb-4" alt="..." title="Go To Multitasker" >
-              <div class="text3">JavaScript project - Multitasker </div>
-            </div>
-            <div class="mySlides3">
-              <div class="numbertext3">2 / 6</div>
-                <img src="mt-6.jpg" class="card-img-top mt-5 mb-4" alt="..." title="Go To Multitasker" >
-              <div class="text3">Add Notes</div>
-            </div>
-            <div class="mySlides3">
-              <div class="numbertext3">3 / 6</div>
-                <img src="mt-2.jpg" class="card-img-top mt-5 mb-4" alt="..." title="Go To Multitasker" >
-              <div class="text3">To Do List</div>
-            </div>
-            <div class="mySlides3">
-              <div class="numbertext3">4 / 6</div>
-                <img src="mt-4.jpg" class="card-img-top mt-5 mb-4" alt="..." title="Go To Multitasker" >
-              <div class="text3">Different Themes</div>
-            </div>
-            <div class="mySlides3">
-              <div class="numbertext2">5 / 6</div>
-                <img src="mt-5.jpg" class="card-img-top mt-5 mb-4" alt="..." title="Go To Multitasker" >
-              <div class="text3">Different Themes</div>
-            </div>  
-            <div class="mySlides3">
-              <div class="numbertext3">5 / 6</div>
-                <img src="mt-3.jpg" class="card-img-top mt-5 mb-4" alt="..." title="Go To Multitasker" >
-              <div class="text3">Different Themes</div>
-            </div> 
-            <!-- Next and previous buttons -->
-            <a class="prev3" onclick="plusSlides3(-1)">&#10094;</a>
-            <a class="next3" onclick="plusSlides3(1)">&#10095;</a>
-          </div>
-          <br>
-            <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot3" onclick="currentSlide3(1)"></span> 
-            <span class="dot3" onclick="currentSlide3(2)"></span> 
-            <span class="dot3" onclick="currentSlide3(3)"></span> 
-            <span class="dot3" onclick="currentSlide3(4)"></span> 
-            <span class="dot3" onclick="currentSlide3(5)"></span>
-            <span class="dot3" onclick="currentSlide3(6)"></span> 
-          </div>    
-          <div class="card-body">
-            <h5 class="card-title">Multitasker</h5>
-              <p class="card-text" style="font-size: 12px;">
+        <div class="container-fluid w3-row-padding work-box w3-center p-3 card proj-holder">
+          <br>  
+          <div class="card-body"><a href="/EdelinPortfolios/Multitasker/multitasker">
+            <h5 class="card-title">Multitasker</h5></a>
+            
+              <p class="card-text" style="font-size: 15px;">
                 This is a day to day calendar to have on the background of your computer desktop or laptop. 
                 In this page you can add notes, have a to-do list, and even change the background color to your liking. It 
                 will also display the time for your convenience. <br> I created this page inspired by the time on the screen
@@ -123,114 +79,69 @@
               <h6 style="font-size: 12px; font-weight: bold;">Developed in Vanilla JavaScript, HTML, CSS</h6> 
               <a href="https://github.com/Edelin11/EdelinPortfolios/tree/main/Multitasker" title="Source Code - GitHub"> <i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i></a>
               <br>
-              <a href="/EdelinPortfolios/Multitasker/multitasker" class="btn btn-secondary">Get Multitasker</a>
+              <a href="/EdelinPortfolios/Multitasker/multitasker" class="btn btn-secondary">Visit Site</a>
             </div>
           
         </div>
 
 <!-- SECOND PROJECT -->
-<div class="container-fluid w3-row-padding work-box w3-center p-3">
-    <div class="card w3-col m4 proj-holder pd" style="width: 100%; max-width: 600px">
-       <!-- Full-width images with number and caption text -->
-      <div class="mySlides2">
-        <div class="numbertext2">1 / 6</div>
-          <img src="ZodiacSigns.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Visit Website">
-        <div class="text2">Ionic 5 project - Home Page</div>
-      </div>
-      <div class="mySlides2">
-        <div class="numbertext2">2 / 6</div>
-          <img src="zodic-2.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Visit Website">
-        <div class="text2">Selected Zodiac Page</div>
-      </div>
-      <div class="mySlides2">
-        <div class="numbertext2">3 / 6</div>
-          <img src="zodic-3.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Visit Website">
-        <div class="text2">Selected Zodiac Yearly [Empty]</div>
-      </div>
-      <div class="mySlides2">
-        <div class="numbertext2">4 / 6</div>
-          <img src="zodic-4.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Visit Website">
-        <div class="text2">Side Bar</div>
-      </div>
-      <div class="mySlides2">
-        <div class="numbertext2">5 / 6</div>
-          <img src="zodic-5.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Visit Website">
-        <div class="text2">What's My Sign </div>
-      </div>  
-      <div class="mySlides2">
-        <div class="numbertext2">6 / 6</div>
-          <img src="zodic-6.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Visit Website">
-        <div class="text2">WebPage For Zodiac and Chinese Signs </div>
-      </div> 
-      <!-- Next and previous buttons -->
-      <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
-      <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
-    </div>
+<div class="container-fluid w3-row-padding work-box w3-center p-3 proj-holder card">
     <br>
-      <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot2" onclick="currentSlide2(1)"></span> 
-      <span class="dot2" onclick="currentSlide2(2)"></span> 
-      <span class="dot2" onclick="currentSlide2(3)"></span> 
-      <span class="dot2" onclick="currentSlide2(4)"></span> 
-      <span class="dot2" onclick="currentSlide2(5)"></span>
-      <span class="dot2" onclick="currentSlide2(6)"></span> 
-    </div>
     <!-- ******** -->
-    <div class="card-body">
-      <h5 class="card-title">The Zodiac Signs</h5>
-      <p class="card-text" style="font-size: 12px;">This is a mobile app that I created with Ionic 5 and Capacitor with Angular for IOS phones.<br>
+    <div class="card-body"><a href="https://weeklyh-6d314.firebaseapp.com/main">
+      <h5 class="card-title">The Zodiac Signs</h5></a>
+      
+      <p class="card-text" style="font-size: 15px;">This is a mobile app that I created with Ionic 5 and Capacitor with Angular for IOS phones.<br>
         Is an app for entertainment purposes only that tells you the monthly and weekly horoscope. <br>
         Right now it's just an empty app that I created for learning purposes.
       </p>
       <h6 style="font-size: 12px; font-weight: bold;">Developed with Ionic 5 and IOS Capacitator.</h6>
       <a href="https://github.com/Edelin11/WeeklyHoroscope" title="Source Code - GitHub"> <i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i></a>
       <br>
-      <a href="https://weeklyh-6d314.firebaseapp.com/main" class="btn btn-secondary">The Zodiac Signs</a>
+      <a href="https://weeklyh-6d314.firebaseapp.com/main" class="btn btn-secondary">Go to App</a>
     </div>
   </div>
 
   <!-- SECOND PART OF THE PROJECT LIST -->
   <!-- THIRD PROJECT -->
-    <div class="container-fluid w3-row-padding work-box w3-center p-3"> 
-      <div class="card w3-col proj-holder pd" style="width: 18rem;">
-        <a href="/EdelinPortfolios/Relax/breathe"><img src="breathe.jpg" class="card-img-top mt-5" alt="..." title="Go To Brethe & Relax"></a>
-        <div class="textC">JavaScript, HTML5, CSS, Bootstrap</div>
+    <div class="container-fluid w3-row-padding work-box w3-center p-3 proj-holder card"> 
         <div class="card-body">
-          <h5 class="card-title">Breathe</h5>
-          <p class="card-text" style="font-size: 12px;">
+          <a href="/EdelinPortfolios/Relax/breathe">
+            <h5 class="card-title" href="/EdelinPortfolios/Relax/breathe">Breathe</h5>
+          </a>
+          <p class="card-text" style="font-size: 15px;">
             I love meditation and breathing is an important aspect of it. Practicing deep breathing could help you 
             with anxiety, relaxing and it can help you be present in the moment.
             </p>
           <h6 style="font-size: 12px; font-weight: bold;">Developed in JavaScript, HTML, CSS, Bootstrap.</h6>
           <a href="https://github.com/Edelin11/EdelinPortfolios" title="Source Code - GitHub"> <i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i></a>
           <br>
-          <a href="/EdelinPortfolios/Relax/breathe" class="btn btn-secondary">Breathe</a>
+          <a href="/EdelinPortfolios/Relax/breathe" class="btn btn-secondary">Visit Site</a>
         </div>
       </div>
+
    <!-- 4th PROJECT -->
-      <div class="card w3-col proj-holder pd" style="width: 18rem;">
-        <a href="/EdelinPortfolios/Calculator/calc"><img src="calc.png" class="card-img-top mt-5" alt="..." title="Go To Calculator"></a>
-        <div class="card-body">
-          <h5 class="card-title">The Neon Calculator</h5>
-          <p class="card-text" style="font-size: 12px;">A simple calculator with an UI designed for users that love neon and want to do basic arithmatic 
-            in a differnt style. 
-            .
-          "It is an interactive software tool that is designed to process a predefined set 
+   <div class="container-fluid w3-row-padding work-box w3-center p-3 proj-holder card">
+      <div class="card-body"><a href="/EdelinPortfolios/Calculator/calc">
+        <h5 class="card-title">The Neon Calculator</h5></a>
+          
+          <p class="card-text" style="font-size: 15px;">A simple calculator with an UI designed for users that love neon and want to do basic arithmatic 
+            in a differnt style. "It is an interactive software tool that is designed to process a predefined set 
             of mathematical functions in order to simulate a business process".
           </p>
           <h6 style="font-size: 12px; font-weight: bold;">Developed in JavaScript, HTML, CSS, Bootstrap.</h6> 
           <a href="https://github.com/Edelin11/EdelinPortfolios" title="Source Code - GitHub"> <i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i></a>
           <br>
-          <a href="/EdelinPortfolios/Calculator/calc" class="btn btn-secondary">Calculator</a>
+          <a href="/EdelinPortfolios/Calculator/calc" class="btn btn-secondary">Use Calculator</a>
         </div>
       </div>
+
       <!-- 5th PROJECT -->
-      <div class="card w3-col  proj-holder pd" style="width: 18rem;">
-        <a href="/EdelinPortfolios/FlipWord/flipgame"><img src="game.jpg" class="card-img-top mt-5" alt="..." title="Go To Game"></a>
-        <div class="card-body">
-          <h5 class="card-title">Flip and Match Game</h5>
-          <p class="card-text" style="font-size: 12px;">
+      <div class="container-fluid w3-row-padding work-box w3-center p-3 proj-holder card">
+        <div class="card-body"><a href="/EdelinPortfolios/FlipWord/flipgame">
+          <h5 class="card-title">Flip and Match Game</h5></a>
+  
+          <p class="card-text" style="font-size: 15px;">
             Flip cards and get the matching pair. <br>
             There are three tables, one with words, one with colors and another one with icons. 
           </p>
@@ -240,130 +151,35 @@
           <a href="/EdelinPortfolios/FlipWord/flipgame" class="btn btn-secondary">Go To Game</a>
         </div>
       </div>
-    </div>
-
+    
 <!-- last part of projects   -->
-  <div class="container-fluid w3-row-padding work-box w3-center p-3">
-    <div class="card w3-col m4 proj-holder pd " style="width: 100%; max-width: 600px">
-    <!-- ******** -->
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-      <img src="contacts.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Rails On Ruby Project">
-      <div class="text">ROR project - Register/Sign In</div>
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-      <img src="contacts-6.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Rails On Ruby Project">
-      <div class="text">Signed In Page</div>
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-      <img src="contacts-3.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Rails On Ruby Project">
-      <div class="text">Book, Contacts List Page</div>
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-      <img src="contacts-7.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Rails On Ruby Project">
-      <div class="text">Edit Contact</div>
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-      <img src="contacts-2.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Rails On Ruby Project">
-      <div class="text">Selected Contact Page</div>
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-      <img src="contacts-8.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Rails On Ruby Project">
-      <div class="text">Add New Contact</div>
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-      <img src="contacts-4.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Rails On Ruby Project">
-      <div class="text">Edit My Account Page</div>
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-      <img src="contacts-5.jpg" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Rails On Ruby Project">
-      <div class="text">SignOut Page</div>
-    </div>
-  <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-    <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span> 
-    <span class="dot" onclick="currentSlide(4)"></span> 
-    <span class="dot" onclick="currentSlide(5)"></span> 
-    <span class="dot" onclick="currentSlide(6)"></span>
-    <span class="dot" onclick="currentSlide(7)"></span> 
-    <span class="dot" onclick="currentSlide(8)"></span>  
-  </div>
-          <!-- ******** -->
-  <div class="card-body">
-    <h5 class="card-title">Contacts Book</h5>
-    <p class="card-text" style="font-size: 12px;">I created this project to get familiar with Ruby On Rails. 
+  <div class="container-fluid w3-row-padding work-box w3-center p-3 proj-holder card">
+  <div class="card-body"><a href="https://github.com/Edelin11/EdelinPortfolios">
+    <h5 class="card-title">Contacts Book / Ruby On Rails</h5></a>
+    
+    <p class="card-text" style="font-size: 15px;">I created this project to get familiar with Ruby On Rails. 
       <br>
       It will require you to create a user account and then login. Once inside you can create a new contact list, edit or delete them.
       <br>
       Project not hosted on any website, so I provided pictures.
     </p>
     <h6 style="font-size: 12px; font-weight: bold;">UI/UX Design.</h6> 
-    <br>
+    <a href="https://github.com/Edelin11/EdelinPortfolios" class="btn btn-secondary"><i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i> Source Code</a>
   </div>
 </div>
 
   <!-- UI/UX part of projects  ******** -->
-  <div class="container-fluid w3-row-padding work-box w3-center p-3">
-    <div class="card w3-col m4 proj-holder pd " style="width: 100%; max-width: 600px">
-    <!-- ******** -->
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides4">
-      <div class="numbertext4">1 / 4</div>
-      <img src="LovePulse-1.png" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Rails On Ruby Project">
-      <div class="text4">Small description of the project.</div>
-    </div>
-    <div class="mySlides4">
-      <div class="numbertex4t">2 / 4</div>
-      <img src="LovePulse-2.png" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Rails On Ruby Project">
-      <div class="text4">Mood Board</div>
-    </div>
-    <div class="mySlides4">
-      <div class="numbertext4">3 / 4</div>
-      <img src="LovePulse-3.png" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Rails On Ruby Project">
-      <div class="text4">Pattern Library</div>
-    </div>
-    <div class="mySlides4">
-      <div class="numbertext4">4 / 4</div>
-      <img src="LovePulse-4.png" style="width:100%" class="card-img-top mt-5 mb-4" alt="..." title="Rails On Ruby Project">
-      <div class="text4">App Main Design</div>
-    </div>
+  <div class="container-fluid w3-row-padding work-box w3-center p-3 proj-holder card">
+  <div class="card-body"><a href="/EdelinPortfolios/UI/uidesign">
+    <h5 class="card-title">LovePulse App - UI Design</h5></a>
     
-  <!-- Next and previous buttons -->
-    <a class="prev4" onclick="plusSlides4(-1)">&#10094;</a>
-    <a class="next4" onclick="plusSlides4(1)">&#10095;</a>
-  </div>
-  <br>
-    <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot4" onclick="currentSlide4(1)"></span> 
-    <span class="dot4" onclick="currentSlide4(2)"></span> 
-    <span class="dot4" onclick="currentSlide4(3)"></span> 
-    <span class="dot4" onclick="currentSlide4(4)"></span>  
-  </div>
-          <!-- ******** -->
-  <div class="card-body">
-    <h5 class="card-title">LovePulse App - UI Design</h5>
-    <p class="card-text" style="font-size: 12px;">This is the first part of an UI/UX Design course I'm currently taking.
+    <p class="card-text" style="font-size: 15px;">This is the first part of an UI/UX Design course I'm currently taking.
       <br>
       This is a description, a mood board, a pattern library, and the user interface design.
       <br>
       If you want to give me feedback, please feel free to reach out to me through LinkedIn, the link it's at the bottom of this page.
     </p>
+    <a href="/EdelinPortfolios/UI/uidesign" class="btn btn-secondary">Visit Site</a>
   </div>
 </div> <!-- END OF UI PROJECT -->
  
@@ -373,7 +189,7 @@
 <!-- Container (Contact Section) -->
 <div class="w3-content container w3-padding-64">
   <hr>
-  <h3 class="row justify-content-center w3-padding-32 techno">Technologies</h3>
+  <h3 class="row justify-content-center w3-padding-32 techno">Some Technologies Used</h3>
   <div class="row justify-content-center w3-padding-32 w3-padding-32 techno">
     <div class="col m8 w3-panel">
       <h4 title="Ionic">IONIC 5</h4>
@@ -405,7 +221,7 @@
   <!-- Footer -->
 <footer class=" w3-container w3-center w3-padding-64 w3-opacity w3-hover-opacity-off for_footer" id="contact">
   <a href="#home" class="backup"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class=" w3-section">
+  <div class=" w3-section isize">
     <a href="https://www.instagram.com/watashiwaedelin/" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"> </i></a>
     <a href="https://github.com/Edelin11" title="GitHub"> <i class="fa fa-github w3-hover-opacity"></i></a>
     <a href="https://www.linkedin.com/in/edelin-espino-48680480/" title="LinkedIn"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
