@@ -38,7 +38,7 @@ body,h1,h2,h3,h4,h5,h6 {
 #about{
   margin-top: 80px;
   background: rgb(0, 0, 0);
-  border: 0px solid rgb(0, 0, 0);
+  border: 0px solid black;
   border-radius: 20px;
   color: white;
 }
