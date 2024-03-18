@@ -1,6 +1,6 @@
 body, html {
   background-color: #000000;
-  background: black;
+  background: #EEEEEE;
   height: 100%;
   color: #777;
   line-height: 1.8;
@@ -35,11 +35,16 @@ body,h1,h2,h3,h4,h5,h6 {
   background: rgba(255, 6, 159, 0.727);
   color: white;
 }
+#titulo{
+  color: #444;
+}
 #about{
   margin-top: 80px;
-  background: rgb(0, 0, 0);
+  margin-bottom: 160px;
+  background: #E178C5;
   border: 0px solid black;
   border-radius: 20px;
+  box-shadow: 5px 5px 15px 18px #EEEEEE inset;
   color: white;
 }
 /* 
@@ -88,10 +93,11 @@ THE BEGINNING OF THE PROJECTS GRID
 }
 
 .proj-holder{
-  background: rgb(0, 0, 0);
-  border: 1px solid rgb(0, 0, 0);
+  background: #F6F5F5;
+  border: 1px solid #F6F5F5;
   border-radius: 20px;
-  color: white;
+  color: #444;
+  font-weight: bold;
   padding: 5px;
   margin: 5px;
   margin-top: 20px;
