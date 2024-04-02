@@ -53,10 +53,10 @@ body,h1,h2,h3,h4,h5,h6 {
 /* 
 THE BEGINNING OF THE PROJECTS GRID
 */
-
-.card{
+#projects{
   margin-top: 160px;
 }
+
 .shadowAll{
   border-bottom: 1px solid black;
   border-radius: 20px;
