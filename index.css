@@ -20,6 +20,7 @@ body,h1,h2,h3,h4,h5,h6 {
   width: 100%;
   min-width: auto;
   min-height: auto;
+  overflow: scroll;
 }
 .to-center{
   padding-bottom: 400px;
