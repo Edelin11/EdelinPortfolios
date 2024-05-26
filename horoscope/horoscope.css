@@ -35,11 +35,11 @@ input{
 /* THE BUTTON */
 #zodiac-btn{
     width: 80px;
-    color: black;
+    color: blue;
     background-color: white;
     border: 1px solid #AD88C6;
 }
-#zodiac-btn:hover{
+#zodiac-btn:hover:hover{
     background-color: #FFE6E6;
     border: 1px solid #AD88C6;
 }
