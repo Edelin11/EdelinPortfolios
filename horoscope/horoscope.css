@@ -1,20 +1,59 @@
 body, html {
     color: #444;
     line-height: 1.8;
-    background: #aac1ee;
+    background: white;
 }
-.for_footer{
-    background: goldenrod;
-    position: relative;
-    width: 100%;
-    bottom: -30vh; 
+/* Style the header */
+.header {
+    padding: 10px 16px;
+    background: #AD88C6;
+    color: black;
 }
-.powerby-size{
-    font-size: 12px;
+  
+/* THE INPUT */
+#TheInput{ /* THE INPUT CONTAINER */
+    border-bottom: 1px solid #AD88C6;
+    max-width: 400px;
+    margin-bottom: 54px;
 }
-hr{
-    margin-top: 8px;
+input{
+    color: #444;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #AD88C6;
+    width: 80px;
 }
+.InputStyle{
+    margin-top: 0px;
+}
+.zodiac{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    margin-top: 24px;
+}
+/* THE BUTTON */
+#zodiac-btn{
+    width: 80px;
+    color: black;
+    background-color: white;
+    border: 1px solid #AD88C6;
+}
+#zodiac-btn:hover{
+    background-color: #FFE6E6;
+    border: 1px solid #AD88C6;
+}
+#zodiac-btn:active{
+    color: black;
+    background-color: #E1AFD1;
+    box-shadow: 0px 1px 5px 1px #AD88C6;
+}
+.Description{
+    margin-top: 16px;
+    color: black;
+}
+
+
 .title{
     color: #444;
     font-size: min(max(16px, 3vw), 30px);
@@ -22,8 +61,11 @@ hr{
 }
 .all-inside{
     height: 100%;
-    width: 100%;
+    max-width: 750px;
     margin-bottom: 100px;
+    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
 }
 #btn-coll{
     box-shadow: 2px 2px 5px 1px rgb(224, 85, 85);
@@ -31,39 +73,21 @@ hr{
 .inp{
     color: #777;
 }
-.zodiac{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin: 15px;
-    padding: 5px;
-}
-input{
-    color: #444;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid goldenrod;
-    margin-top: -15px;
-    box-shadow: 0px 1px 5px 1px goldenrod;
-}
-#zodiac-btn{
-    color: #444;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 1px 5px 1px goldenrod;
-}
-#zodiac-btn:hover{
-    background-color: #ccc;
-    border: 1px solid #ccc;
 
-}
-#zodiac-btn:active{
-    background-color: #eee;
-    box-shadow: 0px 1px 5px 1px  rgba(255, 81, 110, 0.507);
-    transform: translateY(3px);
-}
+
+
 .space-for-c{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.powerby-size{
+    font-size: 12px;
+}
+.for_footer{
+    background: goldenrod;
+    position: relative;
+    width: 100%;
+    bottom: -30vh; 
 }

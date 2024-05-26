@@ -41,6 +41,11 @@ const triangle =()=>{
     tri9.setAttribute('class', 'tri3-3');
     fig.appendChild(tri9);
 }
+/*  
+<div><p class="inp">Enter Month: MM</p><input class="" type="text" pattern="[0-9]*" size="6" name="month" id="month"></div>
+                <div> <Enter class="inp">Enter Day: DD </p><input class="" type="text" pattern="[0-9]*" size="6" name="day" id="day"></div>
+                <div><p class="inp">Enter Year: YYYY </p><input class="" type="text" pattern="[0-9]*" size="9" name="year" value=" " id="theYear"></div> 
+*/
 
 
 
