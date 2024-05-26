@@ -20,6 +20,7 @@ body,h1,h2,h3,h4,h5,h6 {
   width: 100%;
   min-width: auto;
   min-height: auto;
+  overflow: scroll;
 }
 .to-center{
   padding-bottom: 400px;
@@ -39,17 +40,23 @@ body,h1,h2,h3,h4,h5,h6 {
   color: #444;
 }
 #about{
-  margin-top: 80px;
-  margin-bottom: 160px;
+  margin-top: 180px;
+  margin-bottom: 60px;
   background: #E178C5;
   border: 0px solid black;
   border-radius: 20px;
   box-shadow: 5px 5px 15px 18px #EEEEEE inset;
   color: white;
 }
+
+
 /* 
 THE BEGINNING OF THE PROJECTS GRID
 */
+#projects{
+  margin-top: 80px;
+}
+
 .shadowAll{
   border-bottom: 1px solid black;
   border-radius: 20px;
