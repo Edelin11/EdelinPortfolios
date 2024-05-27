@@ -1,13 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Eczar&family=Gentium+Plus&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Libre+Baskerville&family=Libre+Franklin&family=Proza+Libre&family=Rubik&family=Taviraj&family=Trirong&family=Work+Sans:wght@600&display=swap');
+
 body, html {
     color: #444;
     line-height: 1.8;
     background: white;
 }
+
+.inknut-antiqua-semibold{
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 /* Style the header */
+
 .header {
-    padding: 10px 16px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;
+    gap: 10px;
+    padding: 10px;
     background: #AD88C6;
-    color: black;
+    color: #fbe6e6; 
+}
+.the-size:link{
+    font-size: 1.3em;
+    font-family: "Inknut Antiqua", serif;
+    grid-column: 1 / span 5;
+    margin-left: 16px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+.the-size:visited { 
+    text-decoration: none; 
+} 
+.the-size:hover { 
+    color: #fbe6e6;
+} 
+.the-size:active { 
+    text-decoration: none; 
+}
+.socials{
+    margin-top: 32px;
+    text-align: end;
+    margin-right: 40px;
+    font-size: 18px;
+}
+.in:link{
+    text-decoration: none;
+}
+.in:visited{
+    text-decoration: none;
+}
+.in:hover{ 
+    color: #fbe6e6;
+} 
+.in:active{
+    text-decoration: none;
 }
   
 /* THE INPUT */
@@ -74,8 +122,6 @@ input{
     color: #777;
 }
 
-
-
 .space-for-c{
     display: flex;
     justify-content: center;
@@ -85,9 +131,11 @@ input{
 .powerby-size{
     font-size: 12px;
 }
-.for_footer{
-    background: goldenrod;
-    position: relative;
+#for_footer{
+    background-color: #AD88C6;
     width: 100%;
-    bottom: -30vh; 
+    position: relative;
+    bottom: 0px;
+    color: white;
+    height: 200px;
 }
