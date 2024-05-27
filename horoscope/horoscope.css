@@ -4,6 +4,8 @@ body, html {
     color: #444;
     line-height: 1.8;
     background: white;
+    height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 .inknut-antiqua-semibold{
