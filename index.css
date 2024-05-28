@@ -16,8 +16,8 @@ body,h1,h2,h3,h4,h5,h6 {
   color: black;
 }
 .bcolorNav{
-  background-color: rgba(5, 5, 5, 0.2);
-  color: black;
+  background-color: rgb(80, 79, 79, 0.5);
+  color: white;
 }
 .for_header, img{
   display: grid;
